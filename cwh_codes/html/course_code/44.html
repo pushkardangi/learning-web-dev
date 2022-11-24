@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset=”UTF-8”>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+    <title>CSS Grid </title>
+    <style>
+        .container {
+            Display: grid;
+            Grid-gap: 1rem;
+            Grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .item {
+            Background-color: yellow;
+            Border: 3px solid black;
+            Padding: 12px 23px;
+        }
+
+        #navbar {
+            Grid-area: navbar;
+        }
+
+        #section {
+            Grid-area: section;
+        }
+
+        #aside {
+            Grid-area: aside;
+        }
+
+        Footer {
+            Grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+
+        <div id="section" class="item">
+            Lorem ipsum dolor, sit ametconsecteturadipisicingelit. Excepturiconsequuntur quos
+            accusamusisteomnisautilloexpeditafacereveniam, sapienteullampossimussuscipit.
+            Lorem ipsum dolor sit ametconsectetur, adipisicingelit. Alias, rerumassumendafacere et
+            voluptaspraesentiumdoloressequidoloremdolorumlaborevelasperiores, odit, saepesolutaquibusdambeatae quasi
+            dignissimos minima! Obcaecatifacereducimus, beataeillolaboriosamofficiisesse a rerumquibusdam.
+            Autemlaboriosam, veniamvel, voluptates, dolorvoluptatemvoluptatumfugiatundeteneturquia ad dolorum tempore
+            quascorporis! Utdistinctioinventoredolorumquisodiototamaliquamexercitationem! Debitis animi ipsum
+            undeobcaecatised, fugiatautemiste provident odio, illumasperiores, temporibus a veniam. Est
+            evenietsintrecusandaeducimusmollitiaaccusamusdoloremquedignissimos, iustoenimcommodi, illo, sequiodit!
+            Saepedoloremquelaboreaperiaminciduntpariatur. Necessitatibusmollitiaexpeditareprehenderitaccusamus in animi
+            officiavoluptates. Similiquevoluptates ad nam, dolorvero nisi eos, uteumillumcumquemolestiae quod
+            inciduntvoluptatum, provident itaquedolorumnesciunt. Nisi omnisnecessitatibusvoluptatumcupiditatedoloribus,
+            magni quasi iste quos delenitivoluptas qui non ad, aliquid quam numquam in consequunturpossimus? Debitis,
+            ipsum officiis libero maiores hic natus? Isteipsamfacere fugit quasi distinctio quos sit
+            voluptatemquasadipisciveniaminciduntpossimusaperiammaioresinventoreeaqueconsecteturnamnulla, magnilabore
+            minima consequuntur! Quae molestiaedistinctioeaqueipsam ab sit quisteneturveritatis, id
+            voluptatemrecusandae, optioquasitaque ex possimusdignissimosenim nihil. Exercitationemaccusantiumquisfugiat
+            quos, cumquemolestiaearchitectoiuremodireprehenderit, evenietdoloribus hic
+            aliquidquaeratdelenitimagniimpedititaqueinventoreesseaspernatur qui.
+            Sequiomnislaborumesteaquequaeratperspiciatisperferendispossimus nemo maxime, libero
+            undeofficiavoluptatesiustoaccusantium quos mollitiaeosporroodit, distinctioconsectetur in. Magni, quam
+            accusamusquibusdameligendinobisnulla, evenietnesciunt hic perspiciatismaximerepudiandaeexcepturi, animi
+            consequuntur. Nam tempore exercitationem ad laboriosam libero quisinventoreiste minus illototam? Rem,
+            eligendiexcepturiducimussimiliqueverodoloribusevenietquasdoloremque. Doloribusteneturvoluptatibus quo sit
+            deseruntlaboriosamdoloremque. Eaquealiquam error incidunt? Illo rem quibusdamnumquamomnisaliquamipsam,
+            doloremquesequimollitianobisharumeiussuscipitofficiislabore, fugit nemo quidemautem ex, eosquisquamiusto.
+            Maximetotamdebitisquis provident pariaturfugiataliquam, alias praesentium? Laudantiumsint,
+            aliquamporroobcaecatinumquam at explicabototamharumiuredebitisasperiores quod cumquenequedoloresaccusantium,
+            tempore ipsa quo quae perspiciatisaperiamnatusreprehenderitdolorum quam. Consectetur,
+            laborumvoluptatibusullam libero voluptasperspiciatismaioreseligendi id dolorumsuscipitperferendisblanditiis,
+            dignissimos nemo consequunturvoluptatetemporavelitnumquam, eosmaximeoptiovoluptatemodio. Sequi et tempore a
+            quos praesentium.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quod, beatae tempore corporis recusandae totam impedit soluta odit quae sunt eaque praesentium ab ipsam qui magni dolorum rem vero vel facere voluptate eius consectetur atque eligendi. Numquam quaerat minima vel, pariatur animi repellat doloremque, nesciunt, suscipit dolorum deserunt beatae esse!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quod, beatae tempore corporis recusandae totam impedit soluta odit quae sunt eaque praesentium ab ipsam qui magni dolorum rem vero vel facere voluptate eius consectetur atque eligendi. Numquam quaerat minima vel, pariatur animi repellat doloremque, nesciunt, suscipit dolorum deserunt beatae esse!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem quod, beatae tempore corporis recusandae totam impedit soluta odit quae sunt eaque praesentium ab ipsam qui magni dolorum rem vero vel facere voluptate eius consectetur atque eligendi. Numquam quaerat minima vel, pariatur animi repellat doloremque, nesciunt, suscipit dolorum deserunt beatae esse!
+        </div>
+
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit ametconsecteturadipisicingelit. Quassolutaexpeditaquis!
+            Lorem ipsum dolor sit, ametconsecteturadipisicingelit. Numquambeataelaudantium nihil aliquamquisquam,
+            suscipit, temporamaximeexcepturi vitae animi voluptatemdignissimoscumquenobisobcaecati,
+            eiustemporibusvoluptas? Numquamullamatque cum minima quod deleniti quae qui!
+            Possimusdoloribuseaodioexplicabo vel. Nemo saepesuscipitipsaeumteneturquidemlaborum alias corrupti! Ad
+            doloribusvoluptaslaudantiumfugiatodittemporibus, minima in assumendacupiditate nihil aliquid sit
+            ullamporroesse tempore neque! Error et illo sit delenitivoluptates. Exercitationemfuga quos,
+            autemeaexplicabo minima animi impedit, corporisobcaecati qui essefugiat a illum dicta quam quis, non
+            repellendussaepedoloressequiveroeveniet ipsum! Qui enimsoluta non evenietpariaturtotamipsa alias vitae, eum
+            minus rerumfaceremagnamnesciuntinventoreexercitationempraesentiumvoluptatibusblanditiismollitia ipsum
+            illoasperiores animi quasdistinctioveniam! Sit enimnumquam,
+            consequuntureiusinventoresintquidempraesentiumiusto, commodiitaqueeligendiatqueexpeditaperferendis quam quae
+            quod eaquetotam culpa quiased ad. Error nisi voluptatesdoloribus ab, enimporrotenetur? Nullaeligendi minus
+            delenitiomnis quae blanditiis, temporavoluptasinciduntbeataeobcaecati? Facilis animi delectusquaerat, rem
+            quidemtotamiure cum maioresdoloreutmagni. Consequuntur cum magnamdolorofficiis, harum ipsum blanditiis dicta
+            ametiusto quos, sedeaqueipsaatque provident voluptas rem. Nesciunt minima esse, facilisrecusandae quod
+            adipiscimagnamassumendanecessitatibus! Dolorblanditiisexercitationemquasveroofficiaquiaipsam,
+            velmaioresdistinctio minus autemevenietconsequunturmagni. Id nostrum, sunt cum
+            nesciuntdolorequisquameligendidoloremrecusandae, beataequiseveniet, autvelititaquenequenecessitatibus quasi
+            laudantiumcommodiilloadipisci minima! Id suscipit quae omnis. Veritatis, temporibus. Delectus, eligendi!
+            Magnamitaqueveritatisreprehenderiteosodit, explicaborecusandaeincidunt vitae voluptatesaepe hic
+            blanditiispariaturofficia. Necessitatibussuscipit quo nostrum! Expedita nostrum doloreperspiciatis id,
+            itaquerepudiandaetemporadoloribusametquas, dicta quam! Nam doloremvoluptatuminciduntiure cum
+            eosenimvoluptate, iustovoluptatibusmodirepudiandae quo, ipsum, quos qui soluta. Eos architecto, adipisci rem
+            ipsamundereiciendisofficiiseveniet, suscipiteaque quae temporaomnisearum ipsum sapiente nostrum
+            nequeitaqueconsequunturmaiores. Saepeofficiadoloresinventore! Natus et aliquiddoloremeiusdelectus,
+            architectodolor non atquebeataeaperiam ipsum numquam quae deseruntvoluptatesvoluptatemaxime, cum quis ex
+            quiaquaeratplaceatillo. Distinctio, atque, adipisciofficia alias excepturifacereiure minus non
+            voluptasdolorequidemarchitectoimpedit nostrum optiodelectusexpeditapossimus hic, repudiandaeisteipsaeveniet
+            tempore. Impedit, cupiditate.
+        </div>
+
+        <footer class="item">
+            Lorem, ipsum dolor sit ametconsecteturadipisicingelit. Provident quo libero cumque.
+        </footer>
+    </div>
+</body>
+
+</html>

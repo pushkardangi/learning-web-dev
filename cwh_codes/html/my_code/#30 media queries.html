@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media (min-width:300px) and (max-width:375px) {
+            #box-1 {
+                display: block;
+                background-color: rgb(197, 146, 69);
+                color: darkgrey;
+            }
+        }
+
+        @media (min-width:376px) and (max-width:1024px) {
+            #box-2 {
+                display: block;
+                background-color: burlywood;
+                color: crimson;
+
+            }
+        }
+
+
+        @media (min-width:1025px) and (max-width:1440px) {
+            #box-3 {
+                display: block;
+                background-color: coral;
+                color: darkblue;
+            }
+        }
+
+        @media (min-width:1441px) {
+            #box-4 {
+                display: block;
+                background-color: cornsilk;
+                color: darkgreen;
+            }
+        }  
+
+        @media (min-width:1441px) {
+           p {
+               color: blue;
+               font-size: 25px;
+               font-family: cursive;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box-1">Mai ek iPhone hoon</div>
+    <div class="box" id="box-2">Mai ek ipad pro hoon</div>
+    <div class="box" id="box-3">Mai ek laptop hoon</div>
+    <div class="box" id="box-4">Mai ek pc hoon</div>
+    <p id="idp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quasi consequuntur impedit nemo assumenda ipsum? Rem ullam qui omnis, reprehenderit, animi libero quis sapiente dignissimos atque inventore id iste beatae, voluptas architecto aliquid vitae ad? Aut esse accusantium perferendis illum.</p>
+</body>
+
+</html>

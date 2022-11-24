@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery</title>
+    <style>
+        * {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae cumque eligendi voluptatibus pariatur
+        debitis exercitationem officia facilis placeat nam saepe Lorem ipsudolor sit, amet consectetur adipisicing lit.
+        Aliquid.
+    </p>
+    <p id="m_change"></p>
+    <p> <button type="button" id="mouse">Mouse</button> </p>
+    <hr>
+
+    Keyboard : <input type="text" />
+    <p id="k_change"></p>
+    <hr>
+
+    <p>
+        <span>Form :</span>
+    <form>
+        Name : <input type="text" id="name" />
+        Email : <input type="email" id="email" />
+        <input type="submit" value="Submit">
+    </form>
+    </p>
+    <hr>
+
+    <p>You Scrolled <span id="scrolled">0</span> Times</p>
+    <pre>
+    s
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    d
+    </pre>
+
+
+</body>
+
+<!-- jQuery -->
+<script src="js/jquery-3.6.1.min.js"></script>
+
+<script>
+    // template
+    // $("selector").action();
+
+    /*
+    // Mouse Events ::
+    1. click
+    2. dblclick
+    3. mouseenter
+    4. mouseleave
+    5. hover
+    6. scroll
+
+    // Keyboard Events ::
+    1. keyup
+    2. keydown
+    3. keypress
+
+    // Form Events
+    1. submit
+    2. focus
+    3. blur
+    */
+
+    // Double Click
+    // $(document).ready(function(){
+    //     $("#text").dblclick(function(){
+    //         document.getElementById("m_change").innerHTML = "Double clicked on Text";
+    //     });
+    // });
+
+    // Mouse Enter
+    // $(document).ready(function(){
+    //     $("#text").mouseenter(function(){
+    //         document.getElementById("m_change").innerHTML = "Mouse Entered";
+    //     });
+    // });
+
+    // Mouse Leave
+    // $(document).ready(function(){
+    //     $("#text").mouseleave(function(){
+    //         document.getElementById("m_change").innerHTML = "Mouse Left";
+    //     });
+    // });
+
+    // Mouse Hover
+    // $(document).ready(function () {
+    //     $("#mouse").hover(function () {
+    //         document.getElementById("m_change").innerHTML = "Mouse Hovered";
+    //     });
+    // });
+
+    // Scroll
+    // var x = 0;
+    // $(document).ready(function () {
+    //     $(window).scroll(function () {
+    //         $("#scrolled").text(x = x + 1);
+    //     });
+    // });
+
+
+    // Keyboard Events
+    // $(document).ready(function () {
+
+    // $("input").keydown(function () {
+    //     document.getElementById("k_change").innerHTML = "keydown executed";
+    // });
+
+    // $("input").keyup(function () {
+    //     document.getElementById("k_change").innerHTML = "keyup executed";
+    // });
+
+    // $("input").keypress(function () {
+    //     document.getElementById("k_change").innerHTML = "keypress executed";
+    // });
+    // });
+
+
+    // Form Events
+
+    // Submit
+    // $(document).ready(function () {
+    //     $("form").submit(function () {
+    //         alert("Successfully Submitted.");
+    //     });
+    // });
+
+    // Focus and Blur
+    // $(document).ready(function(){
+    //     $("input").focus(function(){
+    //         $(this).css("background-color","grey");
+    //     });
+    //     $("input").blur(function(){
+    //         $(this).css("background-color","pink");
+    //     });
+    // });
+
+    // Change
+    // $(document).ready(function () {
+    //     $("input").change(function () {
+    //         alert("Text changed in some input field.");
+    //     });
+    // });
+
+    // On Method
+    // $(document).ready(function () {
+    //     $("p").on("load", function () {
+    //         alert("The paragraph was clicked.");
+    //     });
+    // });
+
+    // Toggle Method
+    // $(document).ready(function () {
+    //     $("p").toggle(
+    //         function () {
+    //             $("p").css("color","red");
+    //         },
+    //         function () {
+    //             $("p").css("color","blue");
+    //         },
+    //         function () {
+    //             $("p").css("color","green");
+    //         }
+    //     );
+    // });
+
+    // $(document).ready(function () {
+
+    //     $("img").load(function () {
+    //         alert("Paragraph loaded.");
+    //     });
+
+    // });
+
+    // The wrap() method wraps specified HTML element(s) around each selected element.
+    // $(document).ready(function () {
+    //     $("#mouse").click(function () {
+    //         $("pre").wrap("<div style='background-color:Green'></div>");
+    //     });
+    // });
+
+</script>
+
+</html>

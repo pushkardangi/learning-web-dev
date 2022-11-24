@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings and String methods</title>
+    <style>
+        h1 {
+            display: inline;
+        }
+    </style>
+    <script>
+        var name = 'pushkar';
+        var surname = 'dangi';
+        var roll = '21';
+        var standard = "12th";
+
+        // we can use both single quote ('') and double quote("") for declaring string, but if you want to use  (') in a string you have to use double quote for string declaration and vice-versa.
+
+        // If you want to use both ('') and ("") in a string you can use back ticks(``) for string declaration.
+
+        // 1. joining words 
+        console.log(name + surname + roll + standard);
+
+        // 2. replacing vars with the actual words (template literal)
+        var main = `"${name}" is a homo sapiens with surname '${surname}' roll no. ${roll} and standard ${standard}`;
+        console.log(main);
+        
+        // 3. String length : counting letters of a word
+        var len = name.length;
+        console.log(`length of my name is ${len}`);
+        
+        // 4. escape sequence character(\t and \n and \\)
+        console.log("Hello World \n \tHow are you all")
+
+        // 5. String Constructor
+        var y = new String("this is a rabbit");
+        console.log(y);
+        
+    </script>
+</head>
+
+<body>
+    <div class="cont">
+        <h1>me</h1>
+        i am a good human being and loves to help people in need
+    </div>
+    <div class="useit"></div>
+</body>
+
+</html>

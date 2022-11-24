@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+
+        // Direct method to create an object
+        // let person = new object();
+        // person.name = "Pushkar Dangi";
+        // person.age = 22;
+        
+        let course = {
+            title: "JavaScript Course",
+            course_number: 101,
+            price: 999,
+            enroll() {
+                console.log("Enrolled Successfully...");
+            }
+
+        };
+        // console.log(course.price);
+
+        // Factory function
+        // function create_course(title) {
+        //     return {
+        //         title: title,
+        //         enroll() {
+        //             console.log("Enrolled Successfully...");
+        //         }
+        //     }
+        // }
+
+        // let course1 = create_course("Java");
+        // console.log(course1.title);
+
+        // Using function
+        function Employee(fname, age) {
+            this.fname = fname,
+            this.age = age,
+            this.enroll = function (){
+                console.log("You are a good employee");
+                return;
+            }
+        };
+
+        var emp = new Employee("Pushkar", 22);
+        console.log(emp);
+        
+        // delete
+        delete emp.age;
+        console.log(emp);
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Queries</title>
+</head>
+<style>
+    .container {
+        Display: grid;
+        Grid-gap: 1rem;
+        Grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media only screen and (max-height:300px) and (max-width:300px) {
+        body{
+            background-color: red;
+        }
+
+        .container {
+            Grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        Aside {
+            Display: none;
+        }
+
+        Span {
+            Display: block;
+            Text-align: center;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width:500px) {
+        Body {
+            Background-color: blue;
+        }
+
+        .container {
+            Grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        Aside {
+            Display: none;
+        }
+
+        Span {
+            Display: block;
+            Text-align: center;
+        }
+    }
+
+    @media (min-width: 500px) and (max-width:800px) {
+        Body {
+            Background-color: yellow;
+        }
+
+        .container {
+            Grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        Span {
+            Display: block;
+            Text-align: center;
+        }
+    }
+
+    @media (min-width: 800px) {
+        Body {
+            Background-color: green;
+        }
+    }
+
+    .bdr {
+        Border: 2px solid black;
+        Padding: 10px 23px;
+        Background-color: wheat;
+    }
+
+    Nav {
+        Grid-area: navbar;
+    }
+
+    Section {
+        Grid-area: section;
+    }
+
+    Aside {
+        Grid-area: aside;
+    }
+
+    Footer {
+        Grid-area: footer;
+        Text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
+        </nav>
+        <section class="bdr">
+            <h2>Learn CSS in hindi</h2>
+            <p>Lorem ipsum dolor, sit ametconsecteturadipisicingelit. Doloremque nemo cupiditatedistinctio et expedita.
+                Delectusquaerataccusamusinventoretenetur error quam minus, provident fugit repellatnecessitatibus?
+                Architectoitaquequidemsequiblanditiis, facereaccusantium hic.lorem122 Lorem ipsum dolor sit
+                ametconsectetur, adipisicingelit. Eligendidignissimosutrerumaut. Fugadelectussuscipitdebitis libero.
+                Itaque, ipsum dignissimosconsequaturrepellatdistinctioenimdolorem,
+                facilisessedolorumillumearumaliquidnumquamblanditiisipsamreiciendisiurenobis quo cum
+                maioresaperiampariatur. Quasaliquam, quae non rerum,
+                architectoeligendiblanditiisofficiaplaceatdolorsolutaexplicabo.
+                Voluptatemteneturperspiciatisnequequidemducimusvelit id explicabo, illomagniquisvoluptatum. Tempora
+                quod, dicta illumratione quo at
+                dolorescupiditateaperiamlaboriosamametsequiquaeratsimiliqueincidunteiusdelenitideseruntaccusamuseligendi
+                nemo estveritatisfugiatducimus! Modi utvel et nihil asperioresmollitiaobcaecati,
+                nequeaccusantiumcorrupti, quisquamvoluptatem rem? Possimus tempore et fugit cumque culpa
+                aliquamdoloremqueodio hic, cum, minima nostrum!</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about us</h1>
+        </aside>
+    </div>
+
+    <footer class="bdr"> Copyright CodeWithHarry 2020 </footer>
+
+</body>
+
+</html>

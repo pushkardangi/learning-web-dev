@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+           
+        .container{
+            border: 6px solid rgb(0, 0, 48);
+            height: 650px;
+            width: 99%;
+            display: flex;
+            /* flex-direction: column; */
+            /*flex-wrap: wrap;*/
+            /*flex-flow: row-reverse wrap; */
+            justify-content: center;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: center;
+
+            align-items: center;
+            
+        }
+
+        .item{
+            border: 2px solid rgb(31, 46, 29) ;
+            background-color: rgb(182, 182, 187);
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+            padding: 10px; 
+        }
+
+        #intro{
+            font-size: 40px;
+          text-align: center;
+          font-weight: bold;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        #item1
+        {
+
+        }
+
+        #item2
+        {
+           
+        }
+
+        #item3
+        {
+            
+        }
+
+        #item4
+        {
+             
+        }
+        
+            
+    </style>
+</head>
+
+<div id="intro">
+    This is flexbox
+</div>
+
+<body>
+    <div class="container">
+        <div class="item" id="item1">one box</div>
+        <div class="item" id="item2">two box</div>
+        <div class="item" id="item3">three box</div>
+        <div class="item" id="item4">four box</div>
+        <div class="item" id="item5">five box</div>
+    </div>
+</body>
+
+</html>

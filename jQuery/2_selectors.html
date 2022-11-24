@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery</title>
+    <style>
+        * {
+            font-size: 22px;
+        }
+
+        div {
+            color: orange;
+        }
+
+        p {
+            color: black;
+        }
+
+        span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div>This is a first division tag.</div>
+    <div>This is a second division tag.</div><br>
+
+    <span class="span">This is a first span tag.</span>
+    <span class="span">This is a second span tag.</span><br>
+
+    <p>This is a first paragraph tag.</p>
+    <p>This is a second paragraph tag.</p>
+
+
+    <button type="button">For P</button>
+    <button type="button">For All</button>
+    <button type="button" id="btn">For Div</button>
+    <button type="button" class="btn">For Span</button> <br><br>
+
+    <div>Click on rows to change the color of text</div>
+    <table border="1px">
+        <tr>
+            <th>S. No.</th>
+            <th>Name</th>
+            <th>Section</th>
+            <th>Stream</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Pushkar</td>
+            <td>D2102</td>
+            <td>BCA</td>
+            <td>Manasa</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Pushkar</td>
+            <td>D2102</td>
+            <td>BCA</td>
+            <td>Manasa</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Pushkar</td>
+            <td>D2102</td>
+            <td>BCA</td>
+            <td>Manasa</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Pushkar</td>
+            <td>D2102</td>
+            <td>BCA</td>
+            <td>Manasa</td>
+        </tr>
+
+    </table>
+</body>
+
+<!-- jQuery -->
+<script src="js/jquery-3.6.1.min.js"></script>
+
+<script>
+    // template
+    // $("selector").action();
+
+    // Selectors ::
+
+    // Element selector ::
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("p").hide();
+        });
+    });
+
+    // Id selector ::
+    // $(document).ready(function () {
+    //     $("#btn").click(function () {
+    //         console.log("div got hidden")
+    //         $("div").hide();
+    //     })
+    // });
+
+    // Class Selector ::
+    // $(document).ready(function () {
+    //     $(".btn").click(function () {
+    //         $("span").hide();
+    //     });
+    // });
+
+    // Selects all elements ::
+    // $(document).ready(function () {
+    //     $("*").click(function () {
+    //         $("button").hide();
+    //     });
+    // });
+
+    // Table even/odd
+    // $(document).ready(function () {
+
+    //     $("tr:even").click(function () {
+    //         $("tr:even").css("color", "red");
+    //     });
+
+    //     $("tr:odd").click(function () {
+    //         $("tr:odd").css("color", "blue");
+    //     });
+
+    // });
+
+
+    // Summary of all Selectors
+    /*
+    $("*")	                    Selects all elements	
+    $(this)                  	Selects the current HTML element	
+    $("p.intro")             	Selects all <p> elements with class="intro"	
+    $("p:first")	            Selects the first <p> element	
+    $("ul li:first")	        Selects the first <li> element of the first <ul>	
+    $("ul li:first-child")	    Selects the first <li> element of every <ul>	
+    $("[href]")               	Selects all elements with an href attribute	
+    $("a[target='_blank']")	    Selects all <a> elements with a target attribute value equal to "_blank"	
+    $("a[target!='_blank']")    Selects all <a> elements with a target attribute value NOT equal to "_blank"	
+    $("tr:even")	            Selects all even <tr> elements	
+    $("tr:odd")                	Selects all odd <tr> elements
+    $(":button")            	Selects all <button> elements and <input> elements of type="button"	
+    $(":radio")                	Selects all input type radio
+    $(":text")                	Selects all input type text
+    */
+</script>
+
+</html>

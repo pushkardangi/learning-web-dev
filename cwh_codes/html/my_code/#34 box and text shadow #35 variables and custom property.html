@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+        }
+
+        :root{
+            --shadow1: 5px 5px 8px rgb(128, 241, 99), 30px 30px 20px rgb(41, 128, 0);
+            --text: 4px 4px 8px rgb(0, 0, 0);
+            --margin50: 50px;
+
+        }
+
+        .class{
+            padding: 10px;
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: blanchedalmond;
+           /* box-shadow: 0px 2px 20px 10px rgba(92, 214, 204, 0.473); */
+
+           box-shadow: var(--shadow1);
+
+           text-shadow: var(--text);
+
+        }
+
+        #id1{
+            margin: var(--margin50);
+        }
+        #id2{
+            margin: 50px;
+        }
+        #id3{
+            margin: 50px;
+        }
+
+        div + div
+        {
+            padding: 10px;
+            font-size: 20px;
+            border: 2px solid black;
+            background-color: blanchedalmond;  
+            box-shadow: var(--shadow1);
+            text-shadow: var(--text);
+ 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class" id="id1">
+            <h1>Topic-1</h1>  
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus voluptate voluptates molestias provident quaerat nostrum iure tenetur in minima.
+        </div>
+
+        <div class="class" id="id2">
+            <h1>Topic-2</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus voluptate voluptates molestias provident quaerat nostrum iure tenetur in minima.
+        </div>
+
+        <div class="class" id="id3">
+            <h1>Topic-3</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus voluptate voluptates molestias provident quaerat nostrum iure tenetur in minima.
+        </div>
+    </div>
+
+    
+    <div class="container">
+        <h1>Topic-4</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias minus voluptate voluptates molestias provident quaerat nostrum iure tenetur in minima.
+    </div>
+</body>
+</html>

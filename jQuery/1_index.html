@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- google link for jquery -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <title>jQuery</title>
+    <style>
+        *{
+            font-size: 20px;
+            background-color: rgb(235, 235, 235);
+            font-weight: 800;
+        }
+        p{
+            color: green;
+        }
+        div{
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div>This is a first division tag.</div> <br>
+    <div>This is a second division tag.</div>
+    <p>This is a  first paragraph tag.</p>
+    <p>This is a second paragraph tag.</p>
+</body>
+
+<!-- jQuery -->
+<script src="js/jquery-3.6.1.min.js"></script>
+
+<script>
+    // template
+    // $("selector").action();
+
+    // ready function
+    $(document).ready(function(){
+
+    });
+
+    // register clicks on p 
+    $("p").click();
+
+    // do this when we click on p
+    $("p").click(function () {
+        console.log("Clicked on paragraph.");
+        $(this).hide();
+    });
+    
+</script>
+
+</html>

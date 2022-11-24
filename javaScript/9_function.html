@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+    <script>
+        // normal function
+        function greet() {
+            document.write("<h1>Good Morning<h1>");
+        };
+
+        // arrow function
+        let greet1 = () => {
+            document.write("<h1>Good Night<h1>");
+        };
+
+        let sum = (a, b) => document.write("<br><br>sum : ", a + b, "<br>");
+        let half = a => document.write("half : ", a / 2);
+    </script>
+</head>
+
+<body>
+    <h1>Functions</h1>
+
+    <input type="button" onclick="greet()" value="Good Morning">
+    <input type="button" onclick="greet1()" value="Good Night">
+
+    <script>
+        // function calls
+        sum(33, 44);
+        half(553);
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Dimensional Array</title>
+    <style>
+        * {
+            font-size: 30px;
+        }
+    </style>
+    <script>
+
+        // pre-defined values
+        let arr = [
+            ["Name", "Age", "Gender", "Course"],
+            ["Pushkar", 21, "M", "BCA"],
+            ["Kiran", 20, "F", "B.tech"],
+            ["Anjali", 20, "F", "BCA"],
+            ["Nwang", 21, "M", "B.tech"],
+            ["Nwang", 21, "M", "B.tech"]
+        ];
+
+        // Table
+        document.write("<table border='1px'>");
+
+        // Head
+        document.write("<tr>");
+        for (let j = 0; j < 4; j++) {
+            document.write("<th>",arr[0][j],"</th>");
+        }
+        document.write("</tr>");
+
+        // Body
+        for (let i = 1; i < 6; i++) {
+
+            document.write("<tr>");
+            for (let j = 0; j < 4; j++) {
+                document.write("<td>");
+                document.write(arr[i][j]);
+                document.write("</td>");
+            }
+            document.write("</tr>");
+
+        }
+        document.write("</table>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

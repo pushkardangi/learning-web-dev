@@ -1,0 +1,61 @@
+meter{
+    width: 400px;
+    height: 0.7in;
+}
+
+/* 
+CSS : Cascading Style Sheets
+regulated by : World Wide Web Consortium (W3C)
+
+Types :
+1. Inline css
+ <body style="color:blue;text-align:center;">
+  Text
+ </body>
+
+2. Internal css
+<style> css </style>
+
+3. External css
+In html file : <link rel="stylesheet" href="style.css" type="text/css">
+*/
+
+/* 
+Font Attributes :
+1. font-family
+2. font-style
+3. font-weight
+4. font-size
+*/
+
+/* 
+Color and Background :
+1. color
+2. background-color
+3. background-image: url("image.png");
+4. background-repeat
+5. background-attachment
+6. background-position
+7. background-size
+*/
+
+/* 
+1. text-decoration
+2. text-transform
+3. text-align
+4. vertical-align
+5. word-spacing
+6. letter-spacing
+7. line-height
+*/
+
+/* 
+Selectors : 
+1. element selectors :   p { css properties }
+2. class selectors :     .class_name{ css properties }
+3. id selectors :        #id_name { css properties }
+4. group selectors :     h1, p, div { css properties }
+*/
+
+
+

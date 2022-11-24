@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        .container {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Javascript Operators</h1>
+        <script>
+
+            // Arithmetic Operators
+            var a = 5;
+            var b = 2;
+            document.write(" A : ", a, "<br>");
+            document.write(" B : ", b, "<br>");
+            document.write("Arithmetic Operators : ", "<br>");
+            document.write(" Addition : ", a + b, "<br>");
+            document.write(" Subtraction : ", a - b, "<br>");
+            document.write(" Multiplication : ", a * b, "<br>");
+            document.write(" Division : ", a / b, "<br>");
+            document.write(" Modulus : ", a % b, "<br>");
+            document.write(" Exponent : ", a ** b, "<br>");
+            document.write(" a++ : ", a++, "<br>");
+            document.write(" ++a : ", ++a, "<br>");
+            document.write(" a-- : ", a--, "<br>");
+            document.write(" --a : ", --a, "<br>");
+            document.write("<br>");
+
+            // Bitwise Operators
+            document.write("Bitwise Operators : ", "<br>");
+            document.write("(a & b) : ", a & b, "<br>");
+            document.write("(a | b) : ", a | b, "<br>");
+            document.write("(~a) : ", ~a, "<br>");
+            document.write("<br>");
+
+            // Assignment Operators
+            let c = 2;
+            let d = 4;
+            document.write(" A : ", c, "<br>");
+            document.write(" B : ", d, "<br>");
+            document.write("Assignment Operators : ", "<br>");
+            document.write("a = a + b : a += b : ", c += d, "<br>");
+            document.write("b = b - a : b -= a : ", d -= c, "<br><br>");
+
+            // Comparison Operators
+            document.write(" A : ", c, "<br>");
+            document.write(" B : ", d, "<br>");
+            document.write("Comparison Operators : ", "<br>");
+            document.write("a < b : ", c < d, "<br>");
+            document.write("a > b : ", c > d, "<br>");
+            document.write("a <= b : ", c <= d, "<br>");
+            document.write("a >= b : ", c >= d, "<br>");
+            document.write("a == b : ", c == d, "<br>");
+            document.write("a != b : ", c != d, "<br>");
+            document.write("a === b : ", c === d, "<br>");
+            document.write("a !== b : ", c !== d, "<br>");
+            document.write("<br>");
+
+            // Logical Operators
+            document.write(" A : ", a, "<br>");
+            document.write(" B : ", b, "<br>");
+            document.write("<h3>Logical Operators : </h3>");
+            document.write(" (a == b) && (a > b) : ", ((a == b) && (a > b)), "<br>");
+            document.write(" (a == b) || (a > b) : ", ((a == b) || (a > b)), "<br>");
+            document.write(" !a : ", (!a), "<br>");
+            document.write("<br>");
+            
+            // Ternary Operator
+            document.write("<h3>Conditional (Ternary) Operators : </h3>");
+            let bit = true;
+            let ans = (bit ? 1 : 0);
+            document.write("bit = ",bit,"<br>","(bit ? 1 : 0) : ",ans);
+        </script>
+
+    </div>
+</body>
+
+</html>

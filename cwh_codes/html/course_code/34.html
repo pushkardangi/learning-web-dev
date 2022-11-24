@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<meta charset=”UTF-8”>
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+<meta http-equiv=”X-UA-Compatible” content=”ie=edge”>
+<title>Box shadow and text shadow</title>
+</head>
+<style>
+.container{
+    Display: flex;
+}
+.card{
+    Padding: 23px 12px;
+    Margin: 23px 12px;
+    /* border: 2px solid red; */
+    Background-color: burlywood;
+    /* box-shadow: offset-x offset-y color; */
+    /* box-shadow: offset-x offset-y blur-radius color; */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+     box-shadow: 10px 13px green; 
+    /* box-shadow: -10px -13px green; */
+    /* box-shadow: 7px 5px 10px green;
+    Box-shadow: -7px -5px 10px green; */
+    /* box-shadow: -7px -5px 10px 34px green; */
+    /* box-shadow: -7px -5px 10px 34px rgba(71, 172, 172, 0.5); */
+    Box-shadow: inset 3px 5px green;
+
+    Box-shadow: 3px 5px green, 4px 6px red;
+}
+.card h2{
+    /* text-shadow: 3px 4px red; */
+    /* text-shadow: 3px 2px 2px white; */
+    Text-shadow: -3px -2px 2px white;
+}
+</style>
+<body>
+<div class="container">
+<div class="card" id="card-1">
+<h2>This is C++ Course</h2>
+<p>I have started C++ course which does not mean that we will stop this course. We will continue this course to completion. Lorem ipsum dolor sit ametconsecteturadipisicingelit. Cumquelaudantium, doloremqueenimrepellatimpeditautem nostrum facilisodioomnisoptiovoluptatesbeataemollitiatemporibusvoluptasconsequunturharum animi totammolestiaelaborearchitectoratione qui!</p>
+</div>
+
+<div class="card" id="card-2">
+<h2>This is HTML Course</h2>
+<p>Lorem ipsum dolor sit ametconsecteturadipisicingelit. Veritatisplaceatdoloribusmolestiaevelit ipsum, aliquamofficiarationeexcepturi in officiis, incidunt quo estpariatur tempore ex, distinctio nostrum! Sint non doloribus rem obcaecatisunt.</p>
+</div>
+
+<div class="card" id="card-3">
+<h2>Card3</h2>
+<p>Lorem ipsum dolor sit ametconsecteturadipisicingelit. In teneturmolestiae, placeatquasperferendisquibusdamatqueomnisdistinctioobcaecatidolor, temporaundedeseruntiurenam. Istelaboreevenietessedeserunt?</p>
+</div>
+</div>
+</body>
+</html>
+
+
+

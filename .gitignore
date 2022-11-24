@@ -1,0 +1,11 @@
+#ignores all media files
+*.jpeg
+*.mp3
+*.mp4
+*.pdf
+
+#ignores vs code folder
+.vscode/
+
+#ignores all pdf notes
+cheat_sheet/

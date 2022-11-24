@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+
+        body{
+            background: url(water.jpg) no-repeat;
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding: 13px;
+            background-color: rgba(0, 0, 0, 0.214); 
+
+        
+        }
+
+       nav a{
+            margin: 0px 20px;
+            color: azure;
+            text-decoration: none;
+        }
+
+        section{
+            font-size: 30px;
+            color: rgb(239, 255, 255);
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 90px 100px;
+        }
+
+        footer {
+            background-color: rgba(44, 43, 43, 0.779);
+            overflow: hidden;
+            width: 100%;
+            border-radius: 0px;
+            position: relative;
+            top: 163px;
+        }
+        
+        footer a {
+            text-decoration: none;
+            padding: 13px;
+            text-align: center;
+            float: left;
+            color: white;
+        }
+
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section::after{
+            /*content: "this is content"; */
+        }
+
+        h1::before{
+           /* content: "hello"; */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="item1">Home</a>
+            <a href="#" class="item2">About </a>
+            <a href="#" class="item3">Services </a>
+            <a href="#" class="item4">Contact us </a>
+            <a href="#" class="item5">Review</a>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <h1>Hi Guys.....</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus ullam molestiae debitis ab quaerat saepe ipsam consequuntur iure autem beatae temporibus odio inventore consectetur aut incidunt deleniti, laborum harum?</p>
+    </section>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Refund Policy</a>
+        <a href="#">&copy; 2020 | MAnasa MArt</a>
+    </footer>
+</body>
+</html>

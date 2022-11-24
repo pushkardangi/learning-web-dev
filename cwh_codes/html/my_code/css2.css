@@ -1,0 +1,296 @@
+/*SELECTORS IN CSS #15
+Element selector: here p is an element and our focus is on p tag to customize it, so it is known as element selector 
+p{
+    color: #000;
+}
+
+Class selector
+.class1{
+    color: grey;
+    background-color: rgb(73, 30, 30) important;
+}
+
+Id selector
+#id1
+{
+    color: grey;
+}  */
+
+
+
+body
+{
+    background: silver;
+}
+
+.class1
+{
+    /* font-style: italic; */
+    /* background-color: rgb(160, 160, 160); */
+    color: rgb(77, 99, 35);
+    font-size: 25px;
+}
+
+#id1
+{
+    font-size: 36px;
+    padding: px;
+    /* line-height: 60px; */
+}
+
+/* Fonts in css #17 */
+p#id17 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(68, 82, 209);
+    line-height: 1em;
+}
+
+/* Colors in Css */
+p#id18
+{
+     color: cyan;  /*color by name */
+}
+
+p#id18a
+{
+    color: #ff2277; /*color by hex value */
+}
+
+p#id18b
+{
+    color: rgb(68, 82, 209); /*color by rgb value */
+}
+
+.fontsize5
+{
+    font-size: 20px;
+    line-height: 8px;
+}
+
+first element name, second element name
+{
+    color: bisque;
+}
+
+/*SELECTORS
+
+1. TYPE SELECTOR
+h1
+{
+    color: bisque;
+}*/
+
+/* 2. CLASS SELECTOR
+.classname
+{
+    color: bisque;
+} */
+
+.cl4
+{
+    color: #1f28ad;
+}
+
+span.cl3, div.cl3
+{
+    color: crimson;
+    font-weight: bold;
+}
+
+/* 3.ID SELECTOR
+#idname
+{
+    property: value;
+} */
+
+#idspe
+{
+    color: skyblue;
+}
+
+/* 4. DESCENDENT SELECTOR*/
+
+div span
+{
+    color: rgb(110, 65, 65);
+}
+
+/* 5. Attribute selector
+p[h1]
+{
+     property: value;
+} */
+
+li[class~="a"]
+{
+    color: rgb(94, 73, 230);
+}
+
+
+/* 6. Pseudo class selector- used to style states of element
+states-1. hover 
+       2. visited 
+       3. link 
+
+selector: state
+{
+     property: value;
+} */
+
+a:hover
+{
+    color: deeppink;
+}
+
+/* 7. Element selector- simply using selectors by putting their names
+p
+{
+   property: value;  
+} */
+
+li
+{
+    list-style: none;
+}
+
+div,a
+{
+    color: rgb(200, 241, 159);
+}
+
+/* 
+div
+{
+
+      color: #1d6331;   
+}
+
+a
+{
+    color: #1d6331; 
+}  Both tags can be written combinely*/
+
+/* 8. COMBINATOR SELECTOR- ek element k saare child ek saath select kiye ja sakte h or customize kar sakte h
+
+article>p
+{
+   property: value; 
+} */
+
+ol>li.claa
+{
+  color: #2d126b;
+}
+
+/* 9. UNIVERSAL SELECTOR */
+
+/* 10. ADJACENT SELECTOR- ul k baad jo p tag h vo affect hoga */
+
+ul+p
+{
+    color: rgb(145, 53, 23);
+}
+
+
+/* 11. NO NAME FOUND-  */
+body div+p.dis
+{
+    color: seagreen;
+}
+
+/* 12.EVERYTHING SELECTOR-affect entire element
+
+* {
+    color: seagreen;
+}
+
+*/
+
+
+
+
+
+
+.cl1
+{
+    color: #1d6331;
+}
+
+.cl2
+{
+    color: #0a4683;
+}
+
+.cl
+{
+    color: #dd8e3f;
+}
+
+
+.cl7
+{
+    color: #5e0f3e;
+} 
+
+/* HEIGHT, WIDTH, BORDERS AND BACKGROUNDS #19 */
+#firstpara
+{
+    background-color: cornsilk;
+    height: 47px;
+    width: 750px;
+
+    border: 2px saddlebrown dotted;
+    /* border-color: snow;
+    border-width: 5px; 
+    border-style: double; */
+
+    border-radius: 10px;
+
+    
+}
+
+#secondpara
+{
+    background-color: rgb(223, 205, 136);
+    height: 100px;
+    width: 1000px;
+
+    border-top: green 12px groove;
+    border-right: rgb(36, 21, 170) 14px groove;
+    border-bottom: rgb(172, 52, 209) 16px groove;
+    border-left: rgb(189, 28, 63) 18px groove;
+
+    border-bottom-left-radius: 20px;
+    /* border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+}
+
+#thirdpara
+{
+    height: 100px;
+    width: 1550px; 
+    background-image: url(sun.jpg);
+    border: dimgrey 8px solid;
+    background-position: 0px 0px;
+}
+
+#fourthpara
+{
+    height: 567px;
+    width: 1550px; 
+    background-image: url(mun.jpg);
+    border: dimgrey 8px solid;
+    background-repeat: no-repeat; /* repeat-x and repeat-y will make it to repeat in x and y axis */
+
+    /* background-position: center center; */
+    /* background-position: y axis k postions jese_top,center,bottom/ x axis k positions jese_left,center.right; */
+
+    /* background-position: distance from x axis/ distance from y axis; */
+    background-position: 106px 97px;
+}
+
+
+
+

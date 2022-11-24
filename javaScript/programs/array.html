@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <style>
+        * {
+            text-align: center;
+            font-size: 50px;
+            font-weight: 900;
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Sum of all elements of array : </div>
+    <div id="sum"></div>
+
+    <script>
+        let size;
+        let sum = 0;
+
+        size = parseInt(prompt("Enter the size of array : ", "0"));
+
+        let arr = new Array();
+
+        for (let i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt("Enter number : "));
+
+            sum = sum + arr[i];
+        }
+        let html = "The <3 is : " + sum;
+        document.getElementById("sum").innerHTML = html;
+    </script>
+</body>
+
+</html>

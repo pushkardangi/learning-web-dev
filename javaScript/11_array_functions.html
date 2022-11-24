@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <style>
+        body{
+            font-size: 1.5vw;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.write("<h3>--Array--</h3>");
+
+        //declare array
+        let arr = new Array();
+
+        let cars = [];
+
+        let str = "Sample_String";
+        let fname = new Array ("Mango", "Apple","Banana","Orange","Grapes");
+
+        // display array
+        document.write("fname Array : ",fname,"<br>");
+
+        // reverse an array
+        document.write("fname.reverse() : ",fname.reverse(), "<br>");
+        
+        // delete at end
+        document.write("fname.pop() : ",fname.pop(),"<br>");
+        
+        // add at end
+        fname.push("Strawberry","Coconut");
+        document.write("fname.push() : ",fname, "<br>");
+        
+        // length of an array
+        document.write("fname.length : ",fname.length,"<br>");
+        
+        // sort an array
+        fname.sort();
+        document.write("fname.sort() : ",fname,"<br>");
+        
+        // delete at beginning
+        fname.shift();
+        document.write("fname.shift() : ",fname,"<br>");
+        
+        // insert at beginning
+        fname.unshift("Avocado",str);
+        document.write("fname.unshift() : ",fname,"<br>");
+        
+        // add / remove at specific position
+        fname.splice(1,1,"AD"); // index, how much to remove, what to add
+        document.write("fname.splice() : ",fname,"<br>");
+        
+
+        
+        
+
+
+
+        // for(let i = 0; i < fname.length; i++){
+        //     document.write(fname[i]," ");
+        // }
+    </script>
+</body>
+</html>

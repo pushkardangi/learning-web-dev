@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>csswithharry2</title>
+
+
+
+    <style>
+
+        *
+        {
+            box-sizing: border-box;
+            /*margin: 0px;
+            padding: 0px; */
+        }
+        /*upar jo likha h () usse box ki width fix rahegi*/
+
+        body
+        {
+            background-color: #b4c59f;
+        }
+
+        .container
+        {
+            background-color: rgb(144, 177, 96);
+            border: 3px solid rgb(1, 42, 48);
+            /* We can set padding/margin for top,bottom,left and right like this */
+
+            /*
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            */
+
+            /*
+            margin-top: 20px; 
+            margin-bottom: 56px;
+            margin-left: 39px;
+            margin-right: 29px;
+            */
+            
+            /*padding/margin: top right bottom left(TRBL); 
+
+            padding: 0px 256px 22px 181px; 
+            margin: 0px 0px 0px 0px; */
+
+            /* padding: 34; - ye padding charo dishao se aayegi */
+           /* margin: 20px; -ye margin charo dishao se aayegi */
+
+           /*padding: y(top/bottom) x(right/left); */
+           padding: 34px 19px;
+
+           /*margin: y(top/bottom) x(right/left); */
+           margin: 78px 67px;
+
+           border-bottom-left-radius: 20px;
+           border-top-right-radius: 20px;
+           width: px;
+
+           font-size: 18px;
+        }
+
+        .contained
+        {
+            background-color: rgb(115, 140, 77);
+            border: 5px solid rgb(0, 0, 0);
+            
+           padding: 34px 19px;
+
+           margin: 78px 67px;
+
+           border-bottom-left-radius: 20px;
+           border-top-right-radius: 20px;
+           width: px;
+
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           font-size: 18px;
+        }
+
+        .class1 
+        {
+            margin: 64px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="class1">CSS BOX MODEL, MARGIN AND PADDING</h1>
+    <div class="container">
+        <h3>This is my Heading</h3>
+        <p id="id1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum possimus soluta est fugiat tempora dignissimos cum ipsam, voluptatum accusamus error ab nobis obcaecati quisquam reprehenderit animi deserunt placeat maxime adipisci!</p>
+    </div>
+
+    <div class="contained">
+        <h3>This is my Heading</h3>
+        <p id="id3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum possimus soluta est fugiat tempora dignissimos cum ipsam, voluptatum accusamus error ab nobis obcaecati quisquam reprehenderit animi deserunt placeat maxime adipisci!</p>
+    </div>
+
+    </body>
+</html>

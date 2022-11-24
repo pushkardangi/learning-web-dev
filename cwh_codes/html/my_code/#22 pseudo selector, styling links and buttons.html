@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector and more designing more-links and buttons</title>
+
+
+    <style>
+
+        .cl1
+        {
+            border: 4px grey solid;
+            background-color: honeydew;
+            padding: 34px;
+            margin: 30px auto;
+            width: 666px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        
+        /*Pseudo Selector*/
+        a:hover
+        {
+           color: #184858 ;
+           font-weight: bold;
+           font-family: Verdana, Geneva, Tahoma, sans-serif;
+           /* background-color: yellowgreen; */
+        }
+
+        a:visited
+        {
+            color:pink;
+        }
+
+        /*
+        a:active
+        {
+            color: darkblue;
+        }
+        when you clicked the button and have'nt released it,this will come into action at that time
+        */
+
+        .btn2:hover
+        {
+            color: #184858 ;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* background-color: yellowgreen; */
+        }
+
+        .btn1
+        {
+              color: black;
+              background-color: #447788;
+              padding: 4px;
+              border: 1px solid black;
+              border-radius: 4px;
+        }
+
+        .btn2 
+        {
+            background-color: #447788;
+            padding: 4px;
+            border: 1px solid black; 
+            /*border: none; __ can be use to */
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cl1" id="id1">
+        <h1>Aaj ka din kesa raha?</h1>
+        <p>today i wake up at 9 am, and this is not a good sign for my web development course. Today i pledge to be a good student, i promise myself to wake up on time. me  apne aap ko es kary k liye nyochavar karne k liye tayyar hu..pd hein tayyar</p>
+        <a href="https://googe.com" class="btn1">Read More</a> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <button class="btn2">Review this</button>
+    </div>
+</body>
+</html>

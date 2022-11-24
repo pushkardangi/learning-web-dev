@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Notes || Code</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body alink="yellow" link="green" vlink="red" text="black" style="background-color:paleturquoise;">
+    <!-- ------------------------------------------------------- -->
+    
+    <!-- You will need this to work with the notes: 
+
+    1. images : image.png | image1.png(for image map) 
+    2. audio : audio.mp3
+    3. video : video.mp4 
+    4. css : style.css -->
+
+    <!-- ------------------------------------------------------- -->
+    <!-- num = integer value -->
+
+    <!-- 
+    Attributes of Body Tag : 
+    1. background-color
+    2. background : url of an image (background image)
+    3. alink : click : color of active link (when you click on link, it becomes active)
+    4. link : color of unvisited link
+    5. vlink : color of visited link
+    6. text : text color
+     -->
+    <!-- ------------------------------------------------------- -->
+    <!-- 
+
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !!!!!!! THEORY NOTES !!!!!!! 
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    1989	Tim Berners Lee invented www 
+    1991	Tim Berners Lee invented HTML
+    1993    Initial release of HTML
+
+    The World Wide Web Consortium (W3C) is the main international standards 
+    organization for the World Wide Web. Founded in 1994 and currently led by
+    Tim Berners-Lee.
+
+    "Hypertext" refers to links that connect web pages to one another, either
+    within a single website or between websites. Links are a fundamental aspect
+    of the Web. By uploading content to the Internet and linking it to pages created 
+    by other people, you become an active participant in the World Wide Web.
+
+    HTML uses "markup" to annotate text, images, and other content for display in a 
+    Web browser. HTML markup includes special "elements" such as <head>, <title>, <body>, 
+    <header>, <footer>, <article>, <section>, <p>, <div>, <span>, <img>, <aside>, <audio>, 
+    <canvas>, <datalist>, <details>, <embed>, <nav>, <output>, <progress>, <video>, <ul>,
+    <ol>, <li> and many others.
+
+    -->
+    <!-- ------------------------------------------------------- -->
+    <!--
+
+    1. Index.html should be the default home page of the website(SEO)
+    2. Tag :     <p>            </p>
+    3. Element : <p> This is a paragraph</p>
+    4. <!DOCTYPE html> defines the type of document and the version of html used.
+    5. HTML is not case sensitive.
+    6. Attributes add more properties to the tag
+
+    7. If you don't close the tag, HTML will not show an error,
+    the tag will have impact to the end of </html> from <tag> start.
+
+    Element : An HTML element is defined by a start tag, some content, and an end tag.
+            <tagname> content </tagname>
+            
+    Tag : HTML tags are like keywords which defines that how web browser will format
+           and display the content. 
+
+    Attributes : HTML attributes provide additional information about HTML elements.
+    -->
+    <!-- ------------------------------------------------------- -->
+
+    <!-- Heading Tag : h1-h6 -->
+    <h2 align="center">Heading 2</h2>
+
+    <!--Paragraph Tag-->
+    <p align="center">
+        Paragraph Tag : Hello World Origins <br>
+        And while no one can scientifically <br> explain why it became so wildly popular, the program marks a major
+        change in
+        the historical rhetoric of programming itself. Before the 1970s, most people saw computers as complex and
+        expensive equipment reserved for academics, defense or government work.
+    </p>
+    <!-- 
+        Attributes : 
+        align : left, right, center, justify (default)
+     -->
+
+    <details>
+        <summary>Details :</summary>
+        <p>Summary : Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international
+            pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+    <br>
+
+    <!--Anchor Tag-->
+    <!--Absolute Link-->
+    <b>Link :</b>
+    <a href="https://www.google.com/" target="_self">
+        Google
+    </a> <br> <br>
+    <!--
+    href = hyper reference
+
+    Attributes of anchor tag : 
+    target -> value :
+    _blank	    : Opens the linked document in a new tab
+    _self	    : Opens the linked document in the same frame as it was     clicked (this is default)
+    frame_name	: Opens the linked document in the named iframe
+    -->
+
+    <!--Make an Image clickable-->
+    <b>Clickable Image :</b> <br>
+    <a href="https://www.google.com/" target="_blank">
+        <img src="image.png" alt="Google" height="100" hspace="150px">
+    </a><br><br>
+
+    <b>Internal Linking : </b>
+    <!-- name and href is case sensitive -->
+    <a href="#bottom">Go to Bottom of page</a> <br> <br>
+    <!-- 
+    you have to write this at bottom : 
+    <a name="bottom"></a>
+-->
+
+    <!--Relative Link-->
+    <b>Link local page :</b>
+    <a href="frame.html" target="_blank">frame.html</a>
+    <!--This needs a hello.html file in the same folder-->
+
+    <!--Line Break <br> -->
+    <br>
+
+    <hr>
+
+    <!--Image-->
+    <h4>Image Tag : </h4>
+    <img src="image.png" alt="Image not found" height="100" width="250" hspace="100px" vspace="200px" border="1">
+    <!-- 
+    Attributes of Image tag : 
+    1. src
+    2. alt 
+    3. height 
+    4. width 
+    5. align
+    6. hspace : space b/w left border of the browser and the image
+    7. vspace : gives top and bottom space to the image
+    8. border : border of an image
+
+    -->
+
+    <hr>
+
+    <h4>Figure tag : </h4>
+    <figure>
+        <img src="image.png" alt="Tulip" style="width:40%" border="2">
+        <figcaption>Fig.1 - Tulip, Puglia, Italy.</figcaption>
+    </figure>
+
+    <!--Horizontal Ruler-->
+    <hr>
+
+    <!-- ----------------------------------------------------------------- -->
+
+    <!--Text Formatting Tags-->
+    <b>bold</b>
+
+    <i>italic</i>
+    <em>em tag</em>
+    <cite> cite tag </cite>
+
+    <u>underline</u>
+
+    <big>Big</big>
+    <small>Small</small>
+
+    <del>del tag</del>
+    <strike>strike tag</strike>
+    <!-- why duplicate tags(del, strike),new tags to replace old tags, because some old tags were not compatible with new browsers -->
+
+    <!-- Highlight the text -->
+    <mark>mark tag</mark>
+
+    <q>quotation</q>
+
+    <font color="red">font color</font>
+    <font size="5">font size</font>
+    <font face="times new roman">font face</font>
+
+    <tt>tt tag : typewriter style text</tt>
+    <br><br>
+
+    <q>
+        This text is written in center tag
+    </q>
+
+    <center>This is written in center tag.</center>
+
+    <!--Subscript-->
+    <p>Subscript : C<sub>6</sub> H<sub>12</sub> O<sub>6</sub></p>
+
+    <!--Superscript-->
+    <p> Superscript : 2<sup>n</sup></p>
+
+
+    <!--Pre Tag-->
+    <pre>
+    Pre Tag : 
+         Lorem ipsum dolor
+           sit a boy was playing
+        *    in the playground. quos!
+        * *
+        * * *
+        * * * *
+        * * * * * 
+        * * * * * *
+        * * * * * * *
+ </pre>
+
+    <hr>
+    <!-- ------------------------------------------------------- -->
+
+    <!-- Page Layout Techniques : Semantic Tags -->
+    <!-- 
+    1. for better SEO
+    2. for better arrangements
+     -->
+    <header>Header : For headings</header>
+
+    <main>Main : For body of the web page</main>
+    <section>Section : used for a sections on the page</section>
+    <article>Article : for an article in the page</article>
+    <aside>Aside : for content aside main content (ads)</aside>
+
+    <footer>Footer : for footer</footer>
+    <hr>
+
+    <!-- Non Semantic Tags :  -->
+    <!-- Div : used for other HTML elements
+             : block element (takes full width of the webpage) 
+    -->
+    <div>Div : Block element</div>
+    <!-- List of some Block Elements : 
+    <address>   <article>  <aside>   <blockquote>   <canvas>
+    <dd>    <div>   <dl>   <dt>
+    <fieldset>  <figcaption>  <figure>  <footer>  <form>
+    <h1>-<h6>
+    <header>    <hr>    <li>    <main>  <nav> <noscript>
+    <ol>    <p> <pre>    <section>   <table>    <tfoot>
+    <ul>    <video> 
+    -->
+
+    <!-- Span : also a container tag used for other HTML elements
+             : inline element (takes width as per size) 
+    -->
+    <span>Span : Inline element</span>
+    <!-- List of some Inline Elements : 
+    <a> <abbr>   <acronym>  <b>   <bdo>  <big> <br> <button> <cite>
+    <code> <dfn>    <em>    <i> <img>    <input> <kbd>    <label>
+    <map>    <object>    <output><q><samp><script><select><small>
+    <span>  <strong>    <sub>   <sup>  <textarea>    <time>  <tt>  
+    <var>
+     -->
+    <hr>
+
+    <!-- ------------------------------------------------------- -->
+
+    <!-- Pro Level -->
+
+    <!-- 
+    list : 
+    1. Unordered List : ul, li
+    2. Ordered List
+    -->
+
+    <h4>Unordered List</h4>
+    <!-- 
+    Attributes of ul : type="circle | disc | square | none"
+    (horizontal list for navbar)
+    -->
+
+    <ul type="square">
+        <li>Mango</li>
+        <ul type="circle">
+            <li>Colour : Yellow</li>
+            <li>Season : Summer</li>
+        </ul>
+        <li>litchi</li>
+        <ul type="disc">
+            <li>Colour : Red</li>
+            <li>Season : No data</li>
+        </ul>
+        <li>Apple</li>
+        <ul type="none">
+            <li>Colour : Red</li>
+            <li>Season : Winter</li>
+        </ul>
+    </ul>
+
+    <h4>Ordered List</h4>
+    <!--
+    Attributes of ol : type="1 | a | A | i | I"
+    start="value" value = numbers(1,5,10)
+
+    ol : also has list counting, can be control by keyword "start"
+    automatic line break in li
+    -->
+    <ol type="1" start="11">
+        <li>Mango</li>
+        <ol type="a">
+            <li>Colour : Yellow</li>
+            <li>Season : Summer</li>
+        </ol>
+        <li>Litchi</li>
+        <ol type="A">
+            <li>Colour : Yellow</li>
+            <li>Season : Summer</li>
+        </ol>
+        <li>Apple</li>
+        <ol type="i">
+            <li>Colour : Yellow</li>
+            <li>Season : Summer</li>
+        </ol>
+        <li>Orange</li>
+        <ol type="I">
+            <li>Colour : Yellow</li>
+            <li>Season : Summer</li>
+        </ol>
+    </ol>
+
+    <h4>Description List</h4> <!-- or definition list-->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- Chocolaty brown hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- White Cold drink</dd>
+    </dl>
+    <!-- LTD - Limited  -->
+
+    <hr>
+
+    <!-- ------------------------------------------------------- -->
+
+    <h3>Table :</h3>
+    <!-- Tags in Table : 
+        tr : table row
+        th : table heading : bold + centered
+        td : table data
+        caption : for heading of table
+        thead, tbody : for layout
+        
+        Attributes of th and td : 
+        colspan and rowspan
+    -->
+    <table border="1" bgcolor="pink" background="image.png">
+        <!-- 
+        Attributes of table :
+        1. border : border="value"  value = 1,2,3 (default = 0) 
+
+        2. cellpadding : cellpadding="value"  value = 1,2,3 (default = 1)
+        :: space b/w the text and cell border
+
+        3. cellspacing : cellspacing="value"  value = 1,2,3 (default = 2)
+        :: space around the cell on 4 sides
+
+        4. frame : creating a border on any side of the table
+        or frames for a table | frame="value"  
+        
+        value = 
+        void	No frame is drawn (default value).
+        above	Only the top side is drawn.
+        below	Only the bottom side is drawn.
+        hsides	Only the top and bottom sides are drawn.
+        vsides	Only the left and right sides are drawn.
+        lhs	    Only the left-hand side is drawn.
+        rhs  	Only the right-hand side is drawn.
+        box	    All four sides are drawn.
+        border	All four sides are drawn.
+
+        5. rules : control how the table grid-lines are drawn
+        rows	Rules are drawn between rows only.
+        cols	Rules are drawn between columns only.
+        all 	Rules are drawn between all rows and columns.
+        none    None
+
+        6. align the contents(of cell) of the table.
+        align : in horizontal area : value : left, center, right
+        valign : in vertical area  : value : top, middle, bottom
+
+        7. bgcolor : background colour
+        used with table, tr, th, td
+
+        8. background : background image
+        used with table, th, td
+
+        9. bordercolor : colour of the border of the table
+        used with only table tag
+
+        10. height="value"
+        11. width="value"
+        *changing the width of the cell is not recommended because we also have other cells
+        
+        Attributes of <td> and <th>
+        1. rowspan (merging rows) : rowspan="num"
+        2. colspan (merging columns) : colspan="num"
+        -->
+        <thead>
+            <caption align="bottom">Student Data</caption>
+            <!-- 
+            Attributes of caption : align="top(default) | right | bottom | left | center"
+            -->
+            <tr>
+                <th colspan="2">Information</th>
+                <!-- or -->
+                <!-- <th>Name</th>
+                <th>Roll no.</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Pushkar</td>
+                <!-- or -->
+                <td>46</td>
+            </tr>
+            <tr>
+                <!-- <td>Pushkar</td> -->
+                <td>46</td>
+            </tr>
+            <tr>
+                <!-- <td>Pushkar</td> -->
+                <td>46</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ------------------------------------------------------- -->
+    <table border="1" bordercolor="red" rules="cols">
+        <thead>
+            <tr>
+                <th colspan="2">Name</th>
+                <!-- <th>class</th> -->
+                <th>roll</th>
+                <th>section</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">pushkar</td>
+                <td>12</td>
+                <td>54</td>
+                <td>d2102</td>
+            </tr>
+            <tr>
+                <!-- <td>pushkar</td> -->
+                <td>12</td>
+                <td>54</td>
+                <td>d2102</td>
+            </tr>
+            <tr>
+                <!-- <td>pushkar</td> -->
+                <td>12</td>
+                <td>54</td>
+                <td>d2102</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Dangi</td>
+                <td>12</td>
+                <td>54</td>
+                <td>d2102</td>
+            </tr>
+            <tr>
+                <!-- <td>Dangi</td> -->
+                <td>12</td>
+                <td>54</td>
+                <td>d2102</td>
+            </tr>
+            <tr>
+                <!-- <td>Dangi</td> -->
+                <td>12</td>
+                <td>54</td>
+                <td>d2102</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!-- ------------------------------------------------------- -->
+    <h4>Image in Cell :</h4>
+    <table border="1">
+        <tr>
+            <th>Hello</th>
+            <th>How</th>
+            <th>Are</th>
+            <th>You</th>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <img src="image.png" alt="hello">
+            </td>
+        </tr>
+    </table>
+    <!-- NESTED TABLES !! NOT DONE YET!!!!!!!!!!!!!! -->
+    <hr>
+
+    <!-- ------------------------------------------------------- -->
+    <h4> Content Editable :</h4>
+    <p contenteditable="true" spellcheck="true">
+        Hello World! How are you guys!!
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <i>This content can be edited in the browser!!</i>
+    </p>
+    <hr>
+    <!-- ------------------------------------------------------- -->
+    <h4>Forms : </h4>
+
+    <form action="/action.php" method="post">
+        <!-- 
+        Attributes of Form :
+        action : CGI accepts the data from URL
+               : where the data will go (file name / URL) 
+        method : get / post
+        name : selects form with js
+             : for database connectivity
+    -->
+        <!-- Difference between get and post :
+
+    GET : 
+    1) In case of Get request, only limited amount of data can be sent because data is sent in header.
+    2) Get request is not secured because data is exposed in URL bar.
+    3) Get request can be bookmarked.
+    4) Get request is idempotent . It means second request will be ignored until Of first is delivered
+    5) Get request is more efficient and used more than Post. 
+
+    POST :
+    1) In case of post request, large amount of data can be sent
+    because data is sent in body.
+    2) Post request is secured because data is not exposed in URL bar.
+    3) Post request cannot be bookmarked.
+    4) Post request is non-idempotent.
+    5) Post request is less efficient and used less than get.
+    -->
+        <!-- 
+        Input type = " 
+        text, password, number, checkbox, radio, date, readonly, disabled, hidden
+        textarea, email, image, search, button, reset, submit "
+     -->
+        Username : <input type="text" placeholder="Username"> <br> <br>
+        Password : <input type="password" placeholder="Password"> <br> <br>
+
+        <label for="datemax">Date :</label>
+        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+        Color : <input type="color" name="fav_color" id="" value="#111111"> <br> <br>
+
+        Age : <input type="number" name="age" id="" min="1" max="200" value="1" step="10"> <br><br>
+        <!-- step and pattern to be discussed -->
+
+        Email : <input type="email" name="email_of_company" id=""> <br><br>
+
+        <!-- Radio button -->
+        <!-- 
+            Attributes of Input > radio : 
+            1. Value : it will send the data to backend (see example)
+            2. Name : The name attribute is used to reference elements in
+            a JavaScript, or to reference form data after a form is submitted.
+            Name will bind all the radio or checkboxes.
+    -->
+
+        <fieldset>
+            <legend align="left">Gender : </legend>
+
+            <!-- checked -->
+            <label for="101">
+                <input type="radio" value="Male" name="gender" id="101" checked>
+                Male
+            </label>
+
+            <label for="102">
+                <input type="radio" value="Female" name="gender" id="102">
+                Female
+            </label>
+
+            <label for="103">
+                <input type="radio" value="other" name="gender" id="103">
+                Prefer not to disclose
+            </label>
+
+        </fieldset>
+
+        <!-- 
+        Label : are used, so that if you click on the text also, the button
+        will be ticked, and it also help the partially visually impaired 
+        peoples 
+        -->
+
+        <h4>Classes and Ids : </h4>
+        <div class="class">Class : This text can be selected by class</div>
+        <!-- Class can select multiple elements -->
+        <div class="id">Id : This text can be selected by id</div>
+        <!-- Id can only be used by one element -->
+
+        <!-- Checkboxes are used when you have to choose b/w multiple options -->
+        <h4>Checkboxes : </h4>
+
+        <label for="201">
+            <input type="checkbox" value="mathematics" name="subject" id="201">
+            Mathematics
+        </label>
+
+        <!-- checked -->
+        <label for="202">
+            <input type="checkbox" value="chemistry" name="subject" id="202" checked>
+            Chemistry
+        </label>
+
+        <label for="203">
+            <input type="checkbox" value="physics" name="subject" id="203">
+            Physics
+        </label>
+
+        <label for="204">
+            <input type="checkbox" value="biology" name="subject" id="204">
+            Biology
+        </label>
+
+        <h4>Dropdown : </h4>
+        <label for="city">City :</label>
+        <select name="city" id="">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="banglore">Banglore</option>
+            <option value="chennai">Chennai</option>
+        </select>
+
+        <br><br>
+
+        <label for="browser">Browser :</label>
+        <input list="browsers" name="browser">
+
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Brave"></option>
+        </datalist>
+        <!-- select > multiple to be discussed -->
+
+        <!-- move to next line in vscode : ctrl + Enter -->
+
+        <h4>Textarea : </h4>
+        <textarea name="feedback" id="301" placeholder="Please give your valuable feedback..." cols="40" rows="5">This text will get into the box</textarea> <br>
+
+        <!-- Upload a file -->
+        <input type="file" name="file" id="">
+
+        <!-- Can be assigned for any action -->
+        <input type="button" value="button to press" disabled>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+
+        <!-- allows you to substitute an image for standard submit button -->
+        <input type="image" src="image.png" alt="this is image" height="15px">
+
+    </form>
+    <hr>
+    <!-- ------------------------------------------------------- -->
+
+    <h4>iframe : </h4>
+    <!-- Website inside website : 
+
+    Attributes of Iframe ::
+
+    name :  is used to specify a reference for an <Iframe> Element.
+    The name attribute is also used as a reference to the elements in a Javascript. 
+-->
+
+    <!-- Youtube video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <!-- Customized iframe -->
+    <iframe width="600" height="300" src="https://www.wikipedia.org/" frameborder="1" name="wikipedia" title="Wikipedia homepage in small size"></iframe>
+    <hr>
+
+    <!-- 
+    Video Tag : 
+    attributes : controls, height, width, loop, autoplay 
+-->
+    <h4>Video : </h4>
+    <video src="video.mp4" controls width="600" height="330">
+        My Video
+    </video>
+
+    <h4>Audio :</h4>
+    <!-- Attribute of audio : muted : keep the audio mute by default -->
+    <audio controls loop>
+        <source src="audio.ogg" type="audio/ogg">
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <!--
+    Embed Tag : 
+    The <embed> tag defines a container for an external resource, such as a web page, a picture, a media player, or a plug-in application.
+
+    Attributes of Embed Tag :
+    height   : height of the content on webpage
+    width    : width of the content on webpage
+    src      : source of the file
+    type     : (img/jpg) (text/html) (video/webm)
+
+    // Suggestion :
+    To display a picture, it is better to use the <img> tag.
+    To display HTML, it is better to use the <iframe> tag.
+    To display video or audio, it is better to use the <video> and <audio> tags.
+-->
+
+    <h4>Embed Tag : </h4>
+    <embed type="image/jpg" src="image.png" width="400" height="200">
+    <noembed>
+        <h1>Content shown when embed doesn't works</h1>
+    </noembed>
+</body>
+
+<!-- ------------------------------------------------------- -->
+
+<!-- 
+    About frameset : 
+    Frameset is HTML4 tag
+    no bold / italic / underline inside frameset is allowed
+
+    -----------------------------------------------------------------------------
+
+    ## Attributes of Frameset : 
+
+    frameborder : for border : value (0,1) default="1"
+    1. three-dimensional border should be displayed between the frames or not
+
+    framespacing : space between frames : value 
+
+    border : between the frames, not all sides (thickness of the border)
+
+    bordercolor : colour of the border
+
+    -----------------------------------------------------------------------------
+    ## Attributes of Frame tag :
+    
+    name : give name to frames
+
+    src : source file
+
+    marginwidth :  specify width of the spaces in pixels between the border and contents of left and right frame
+
+    marginheight : specify height of the spaces in pixels between the border and contents of top and bottom frame.
+
+    scrollbar : yes / no / auto
+
+    noresize : value : noresize="noresize"
+    1. user will not be able to resize the frames
+    2. default : user can resize the frame (how)
+
+-->
+
+<frameset cols="30%,70%" frameborder="1" framespacing="2">
+    <frame src="https://www.google.com/" marginwidth="3" marginheight="4">
+        <frame src="https://www.google.com/">
+</frameset>
+
+<frameset cols="33%,33%,*">
+
+    <frameset rows="50%,50%">
+        <frame src="dest1.html" name="frame1">
+        <frame src="dest2.html" name="frame2">
+    </frameset>
+
+    <frameset rows="100%">
+        <frame src="dest1.html" name="frame3">
+    </frameset>
+
+    <frameset rows="50%,50%">
+        <frame src="dest1.html" name="frame4">
+        <frame src="dest2.html" name="frame5">
+    </frameset>
+
+    <noframes>
+        <body>The browser you are working does not support frames.</body>
+    </noframes>
+
+</frameset>
+
+
+<!-- for a square with 4 equal partition -->
+<frameset rows="50%,50%" cols="50%,50%"></frameset>
+
+
+<!-- ------------------------------------------------------- -->
+<h4>Image Maps : </h4>
+<!-- 
+    Opening multiple links with single image
+    map single image into multiple hot_spots
+    
+    usemap : client side image map
+    ismap : server side image map 
+
+    Attributes of Map : 
+    name : used to map the image with map tag
+
+    Attributes of Area : 
+    shape : shape of the figure (circle, rect, poly, default="rest of the area")
+    coords : for rect : left-top and bottom-right
+           : for circle : center + radius
+           : for poly : each vertex
+-->
+<img usemap="#shapes" src="image1.png" alt="image of shapes">
+
+<map name="shapes">
+
+    <area shape="poly" coords="206,131,170,192,249,195" href="https://en.wikipedia.org/wiki/triangle" alt="triangle"
+        title="triangle">
+
+    <area shape="circle" coords="104,66,38" href="https://en.wikipedia.org/wiki/circle" alt="circle" title="circle">
+
+    <area shape="rect" coords="166,36,248,101" href="https://en.wikipedia.org/wiki/heart" alt="heart" title="heart">
+
+</map>
+
+<!-- ------------------------------------------------------- -->
+<h4>Meter tag : </h4>
+<meter min="0" low="10" optimum="50" high="90" max="100" value="95"></meter>
+<!-- ------------------------------------------------------- -->
+<!-- Part of Internal Linking :  -->
+<a name="bottom"></a>
+<!-- ------------------------------------------------------- -->
+
+<!-- Status bar for web browser : The main purpose of the status bar is to display the URL of a link when you hover the mouse over it. -->
+</body>
+
+</html>

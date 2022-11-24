@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 36 lec</title>
+    <style>
+ 
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            background-color: rgb(128, 133, 131);
+            height: 741px;
+            width: 1582px;
+            box-shadow: 0px 0px 80px 4px seagreen;
+        }
+
+
+        .center {
+            background-color: rgb(224, 224, 235);
+            width: 1000px;
+            height: 600px;
+            position: fixed;
+            top: 80px;
+            left: 300px;
+        }
+
+        .box {
+            background-color: rgb(255, 255, 255);
+            width: 963px;
+            height: 565px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            animation-name: pd1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+        }
+
+
+        @keyframes pd1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            70% {
+                top: 250px;
+                left: 200px;
+            }
+
+            100% {
+                top: 98px;
+                left: 318px;
+            }
+        }
+
+        .pc {
+            display: flex;
+            justify-content: center;
+
+            background-color: honeydew;
+            height: 162px;
+            width: 288px;
+            border: 25px solid black;
+            border-radius: 10px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            animation-name: pc1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+
+        }
+
+        @keyframes pc1 {
+            0% {
+                top: 450px;
+                left: 0px;
+            }
+
+            25% {
+                top: 200px;
+                left: 60px;
+            }
+
+            50% {
+                top: 0px;
+                left: 1200px;
+            }
+
+            75% {
+                top: 50px;
+                left: 200px;
+            }
+
+            100% {
+                top: 159px;
+                left: 420px;
+            }
+        }
+
+        .attach {
+            display: flex;
+
+            background-color: honeydew;
+            height: 2px;
+            width: 0px;
+            border: 20px solid rgb(0, 0, 0);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            animation-name: attach1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+
+        }
+
+        @keyframes attach1 {
+            0% {
+                top: 450px;
+                left: 0px;
+            }
+
+            25% {
+                top: 200px;
+                left: 60px;
+            }
+
+            50% {
+                top: 0px;
+                left: 1200px;
+            }
+
+            75% {
+                top: 50px;
+                left: 200px;
+            }
+
+            100% {
+                top: 361px;
+                left: 565px;
+            }
+        }
+
+        .base {
+            display: flex;
+
+            background-color: honeydew;
+            height: 0px;
+            width: 140px;
+            border: 12px solid rgb(0, 0, 0);
+            border-top-right-radius: 50px;
+            border-top-left-radius: 50px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            animation-name: base1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+
+        }
+
+        @keyframes base1 {
+            0% {
+                top: 450px;
+                left: 0px;
+            }
+
+            25% {
+                top: 200px;
+                left: 60px;
+            }
+
+            50% {
+                top: 0px;
+                left: 1200px;
+            }
+
+            75% {
+                top: 50px;
+                left: 200px;
+            }
+
+            100% {
+                top: 390px;
+                left: 501px;
+            }
+        }
+
+
+
+
+        .cpu {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            background-color: honeydew;
+            height: 202px;
+            width: 62px;
+            border: 25px solid black;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            animation-name: cpu1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+
+        }
+
+        @keyframes cpu1 {
+            0% {
+                top: 450px;
+                left: 0px;
+            }
+
+            50% {
+                top: 600px;
+                left: 400px;
+            }
+
+            100% {
+                top: 160px;
+                left: 804px;
+            }
+        }
+
+        .keys {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+
+            border: 4px solid black;
+            background-color: rgb(240, 240, 240);
+
+            animation-name: keys1;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes keys1 {
+            0% {
+                top: 450px;
+                left: 0px;
+            }
+
+            50% {
+                top: 600px;
+                left: 400px;
+            }
+
+            100% {
+                top: 470px;
+                left: 445px;
+            }
+
+        }
+
+
+
+        .mouse {
+            display: flex;
+            background-color: rgb(82 117 134);
+            height: 40px;
+            width: 25px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            position: absolute;
+            z-index: 2;
+
+            animation-name: mouse1;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-timing-function: ease-in;
+
+        }
+
+        @keyframes mouse1 {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: rgb(2, 117, 134);
+            }
+
+            10% {
+                top: 23px;
+                left: 298px;
+                background-color: rgb(204, 220, 228);
+            }
+
+            20% {
+                top: 23px;
+                left: 1330px;
+            }
+
+            30% {
+                top: 699px;
+                left: 1329px;
+            }
+
+            40% {
+                top: 699px;
+                left: 246px;
+            }
+
+            50% {
+                top: 121px;
+                left: 350px;
+            }
+
+            60% {
+                top: 121px;
+                left: 1226px;
+            }
+
+            70% {
+                top: 602px;
+                left: 1226px;
+            }
+
+            80% {
+                top: 602px;
+                left: 348px;
+            }
+
+            90%{
+                top: -483px;
+                left: -738px;
+            }
+
+            100% {
+                top: 483px;
+                left: 738px;
+            }
+        }
+
+        .pad {
+            display: flex;
+            background-color: honeydew;
+            height: 114px;
+            width: 369px;
+            border: 2px solid rgb(5, 3, 3);
+
+            border-radius: 10px;
+
+            position: absolute;
+            top: 450px;
+            left: 428px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="center"></div>
+        <div class="box"> </div>
+        <div class="pc"><img src="screen.png" alt=""></div>
+        <div class="attach"></div>
+        <div class="base"></div>
+        <div class="cpu">o</div>
+        <div class="mouse"></div>
+        <div class="pad"></div>
+
+        <table class="keys" border="2px">
+            <tr>
+                <td>!</td>
+                <td>@</td>
+                <td>#</td>
+                <td>$</td>
+                <td>%</td>
+                <td>^</td>
+                <td>&#38;</td>
+                <td>*</td>
+                <td>(</td>
+                <td>)</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>&copy;</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+                <td>d</td>
+                <td>e</td>
+                <td>f</td>
+                <td>g</td>
+                <td>h</td>
+                <td>q</td>
+                <td>r</td>
+                <td>s</td>
+                <td>t</td>
+                <td>i</td>
+                <td>/</td>
+                <td>&reg;</td>
+            </tr>
+            <tr>
+                <td>j</td>
+                <td>k</td>
+                <td>l</td>
+                <td>m</td>
+                <td>n</td>
+                <td>o</td>
+                <td>p</td>
+                <td>u</td>
+                <td>v</td>
+                <td>w</td>
+                <td>x</td>
+                <td>y</td>
+                <td>z</td>
+                <td>\</td>
+                <td>&euro;</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>

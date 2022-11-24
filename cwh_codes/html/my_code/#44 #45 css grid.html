@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .container {
+            margin: 15px 0px;
+            display: grid;
+            grid-gap: 1px;
+            grid-template-areas:
+                "nav nav nav nav"
+                " article article article aside"
+                "main main main main"
+                "footer footer footer footer";
+
+        }
+
+        .styling {
+            border: 2px solid rgb(126, 126, 126);
+            padding: 15px;
+        }
+
+        .margin{
+            margin: 1px 28px;
+        }
+
+        .marginone{
+            margin-left: 28px;
+        }
+
+        .margintwo{
+            margin-right: 28px;
+        }
+
+        .bgcolor {
+            background-color: darkkhaki;
+        }
+
+        nav {
+            background-color: darkgray;
+            font-size: 25px;
+            font-weight: bold;
+            grid-area: nav;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        article {
+            grid-area: article;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: darkgray;
+        }
+
+        @media only screen and (max-width:299px) {
+            body {
+                background-color: rgb(199, 233, 233);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    "nav nav nav nav"
+                    "main main main main"
+                    "footer footer footer footer";
+            }
+
+            article,
+            aside {
+                display: none;
+            }
+
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+
+            body {
+                background-color: rgb(125, 197, 197);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    "nav nav nav nav"
+                    " article aside main main"
+                    "footer footer footer footer";
+            }
+
+        }
+
+        @media only screen and (min-width:501px) and (max-width:899px) {
+            body {
+                background-color: rgb(87, 177, 177);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    "nav nav nav nav"
+                    " article article aside aside"
+                    "main main main main"
+                    "footer footer footer footer";
+            }
+        }
+
+        @media only screen and (min-width:900px) and (max-width:1900px) {
+
+            body {
+                background-color: rgb(54, 150, 150);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    "nav nav nav nav"
+                    " article article article aside"
+                    "main main main main"
+                    "footer footer footer footer";
+            }
+
+        }
+
+        /*media queries se grid me responsiveness late hein...........*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="margin styling">
+            <span>Home</span>
+            <span>class</span>
+            <span>school</span>
+            <span>pencil</span>
+            <span>eraser</span>
+            <span>book</span>
+        </nav>
+
+        <aside class="margintwo styling bgcolor">
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside aside aside aside aside aside aside aside aside aside aside
+            aside aside 111111111111111 11111111111111111111111111111111
+        </aside>
+
+        <article class="marginone styling bgcolor">
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article article article article
+            article article article article article article
+            2222222222222222222222222222222222222222222222222222222
+        </article>
+
+        <main class="margin bgcolor styling">
+            main ka content main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main main main main main main main main main main main main
+            main main main mainnnnnnn main
+        </main>
+
+        <footer class="margin styling">
+            codewithharrybhaiya copyright &copy; All right reserved 2021
+        </footer>
+    </div>
+</body>
+
+</html>

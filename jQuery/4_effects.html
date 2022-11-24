@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects</title>
+    <style>
+        * {
+            font-size: 20px;
+        }
+
+        #div1 {
+            height: 100px;
+            width: 100px;
+            background-color: bisque;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p id="text">
+    A computer is a digital electronic machine that can be programmed to carry out sequences of arithmetic or
+    logical operations (computation) automatically. Modern computers can perform generic sets of operations known as
+    programs. These programs enable computers to perform a wide range of tasks. A computer system is a "complete"
+    computer that includes the hardware, operating system (main software), and peripheral equipment needed and used
+    for "full" operation. This term may also refer to a group of computers that are linked and function together,
+    such as a computer network or computer cluster.
+
+    A broad range of industrial and consumer products use computers as control systems. Simple special-purpose
+    devices like microwave ovens and remote controls are included, as are factory devices like industrial robots and
+    computer-aided design, as well as general-purpose devices like personal computers and mobile devices like
+    smartphones. Computers power the Internet, which links billions of other computers and users.
+
+    Early computers were meant to be used only for calculations. Simple manual instruments like the abacus have
+    aided people in doing calculations since ancient times. Early in the Industrial Revolution, some mechanical
+    devices were built to automate long tedious tasks, such as guiding patterns for looms. More sophisticated
+    electrical machines did specialized analog calculations in the early 20th century. The first digital electronic
+    calculating machines were developed during World War II. The first semiconductor transistors in the late 1940s
+    were followed by the silicon-based MOSFET (MOS transistor) and monolithic integrated circuit (IC) chip
+    technologies in the late 1950s, leading to the microprocessor and the microcomputer revolution in the 1970s. The
+    speed, power and versatility of computers have been increasing dramatically ever since then, with transistor
+    counts increasing at a rapid pace (as predicted by Moore's law), leading to the Digital Revolution during the
+    late 20th to early 21st centuries. Click on p to see the use of On Method.
+    </p>
+
+    <input type="button" value="Show" id="show" />
+    <input type="button" value="Hide" id="hide" />
+    <input type="button" value="Toggle" id="toggle" />
+    <input type="button" value="FadeIn" id="fadeIn">
+    <input type="button" value="FadeOut" id="fadeOut">
+    <input type="button" value="Slide Down" id="slide_down">
+    <input type="button" value="Slide Up" id="slide_up">
+    <input type="button" value="Animate" id="animate">
+    <input type="button" value="Animate Back" id="animate_back">
+    <hr> <br>
+
+    <div id="div1">Box</div>
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            // Show
+            $("#show").click(function () {
+                $("p").show();
+            });
+
+            // Hide
+            $("#hide").click(function () {
+                $("p").hide();
+            });
+
+            // // Toggle = hide + show
+            // $("#toggle").click(function () {
+            //     $("p").toggle();
+            // });
+
+            // // Fade In
+            // $("#fadeIn").click(function () {
+            //     $("p").fadeIn();
+            // });
+
+            // // Fade Out
+            // $("#fadeOut").click(function () {
+            //     $("p").fadeOut();
+            // });
+
+            // // Slide Down
+            // $("#slide_down").click(function () {
+            //     $("p").slideDown();
+            // });
+
+            // $("#slide_up").click(function () {
+            //     $("p").slideUp();
+            // });
+
+            // //Animate
+            // $("#animate").click(function (){
+            //     $("#div1").animate({right:'350px'});
+            // });
+
+            // $("#animate_back").click(function (){
+            //     $("#div1").animate({left:'10px'});
+            // });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+        .container{
+            display: grid;
+          /* grid-template-columns: repeat(3, auto); */
+          grid-template-columns: repeat(6, 150px);
+            grid-template-rows:  repeat(4, 100px);
+            grid-auto-rows: 200px ;
+            grid-column-gap: 2rem;
+            grid-row-gap: 4rem;
+        }
+
+
+        .class:first-child{
+            grid-column: 4/ span 3;
+            grid-row: 3/ span 3;
+        }
+
+        .class{
+            Background-color: rgb(209, 142, 142);
+            Border: 2px solid rgb(153, 143, 143);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class">item-1</div>
+        <div class="class">item-2</div>
+        <div class="class">item-3</div>
+        <div class="class">item-4</div>
+        <div class="class">item-5</div>
+        <div class="class">item-6</div>
+        <div class="class">item-7</div>
+        <div class="class">item-8</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+        <div class="class">item-9</div>
+    </div>
+</body>
+</html>

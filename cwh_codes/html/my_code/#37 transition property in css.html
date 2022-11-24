@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        .container{
+            display: flex;
+            height: 500px;
+            background-color: rgb(223, 223, 223);
+        }
+
+        .box{
+            color: lawngreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            position: relative;
+            animation: ani1 4s ease-in-out 0.1s 1 forwards;
+            transition: all 4s ease-in ;
+        }
+
+        @keyframes ani1 {
+            from{
+                top: 300px;
+                left: 0px;
+            }
+
+            to{
+                top: 300px;
+                left: 1384px;
+                color: lightcoral;
+            background-color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="special" class="box">Ego</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!--window object
+- It provides a set of properties and methods that are used to handle browser window, like open, close, print etc.
+o open() – It opens a window
+o close() – It closes the current window
+o print() – It invokes the printer properties to print the window content
+Ex:
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Window Object</title>
+<script>
+function Showsmile(){
+window.open("smiley1.jpg","smile","width=400 height=300");
+}
+</script>
+</head>
+<body>
+<h2>JavaScript window Object</h2>
+<button onclick="Showsmile()">Open</button>
+<button onclick="window.close()">Close</button>
+<button onclick="window.print()">Print</button>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User defined - 2D array</title>
+    <script>
+
+        // user inputs
+
+        let rows = parseInt(prompt("Enter rows : "));
+        let cols = parseInt(prompt("Enter cols : "));
+
+        // create a 2D array
+        let ar = new Array(rows);
+
+        for (let i = 0; i < rows; i++) {
+            ar[i] = new Array(cols);
+        }
+
+        // set values in the array
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                ar[i][j] = parseInt(prompt("Enter value in array : "));
+            }
+        }
+
+        // print the array
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                document.write(ar[i][j], " ");
+            }
+            document.write("<br>");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
