@@ -10,6 +10,9 @@
     <script type="text/javascript">
 
         // Data Types
+
+        // JS use dynamic typing, no need to give type
+        var a = 46;
         let int = 1;
         let float = 2.2;
         let string = "Hello World";
@@ -34,15 +37,40 @@
         document.write(bool_f, "<br>");
         document.write(person.firstName, "<br>");
         document.write(person.lastName, "<br>");
-        document.write(person.age, "<br>");
+        document.write(person.age, "<br><br>");
 
         // Javascript do implicit typecast
 
-        // One line comment
+        // Comments : 
+        // 1.  One line comment
+        /* 2. multi
+        line 
+        comment */
 
-        /*multi line 
-        comment*/
 
+        // Strings in Detail : 
+
+        let name = "Pushkar";
+        let surname = 'dangi';
+        let age = '21';
+
+        // we can use both single quote ('') and double quote("") for declaring string, but if you want to use  (') in a string you have to use double quote for string declaration and vice-versa.
+
+        // If you want to use both ('') and ("") in a string you can use back ticks(``) for string declaration.
+
+        // 1. joining words
+        document.write(name+surname+age,"<br>");
+
+        // 2. template literals
+        let main = `${name} is a student age : ${age}`;
+        document.write(main,"<br>");
+
+        // 3. escape sequence character : check console
+        console.log("Hello World \n \tHow are you all");
+
+        // 4. string length
+        let length = name.length;
+        document.write("Length of the name is : ",length);
 
     </script>
 </head>

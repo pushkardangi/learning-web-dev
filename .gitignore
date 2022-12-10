@@ -1,5 +1,5 @@
 #ignores all media files
-*.jpeg
+#(except .png and .jpeg)
 *.mp3
 *.mp4
 *.pdf
@@ -7,5 +7,5 @@
 #ignores vs code folder
 .vscode/
 
-#ignores all pdf notes
+#ignores this folder
 cheat_sheet/

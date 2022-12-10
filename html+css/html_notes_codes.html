@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Notes || Code</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" type="img/png" href="image1.png">
 </head>
 
 <body alink="yellow" link="green" vlink="red" text="black" style="background-color:paleturquoise;">
     <!-- ------------------------------------------------------- -->
-    
+
     <!-- You will need this to work with the notes: 
 
     1. images : image.png | image1.png(for image map) 
@@ -231,11 +232,13 @@
     <hr>
     <!-- ------------------------------------------------------- -->
 
-    <!-- Page Layout Techniques : Semantic Tags -->
-    <!-- 
+    <!-- Page Layout Techniques : 
+
+    Semantic Elements : clearly describes its meaning to both the browser and the developer.These elements describe the type of content they are supposed to contain.
+
     1. for better SEO
     2. for better arrangements
-     -->
+    -->
     <header>Header : For headings</header>
 
     <main>Main : For body of the web page</main>
@@ -246,10 +249,16 @@
     <footer>Footer : for footer</footer>
     <hr>
 
-    <!-- Non Semantic Tags :  -->
-    <!-- Div : used for other HTML elements
-             : block element (takes full width of the webpage) 
+    <!-- Non Semantic Elements : don't have any meaning.  They don’t tell anything about the content they contain.
+
+    Div : used for other HTML elements
+        : block element (takes full width of the webpage) 
+    
+    Span : also a container tag used for other HTML elements
+         : inline element (takes width as per size) 
     -->
+
+
     <div>Div : Block element</div>
     <!-- List of some Block Elements : 
     <address>   <article>  <aside>   <blockquote>   <canvas>
@@ -261,9 +270,6 @@
     <ul>    <video> 
     -->
 
-    <!-- Span : also a container tag used for other HTML elements
-             : inline element (takes width as per size) 
-    -->
     <span>Span : Inline element</span>
     <!-- List of some Inline Elements : 
     <a> <abbr>   <acronym>  <b>   <bdo>  <big> <br> <button> <cite>
@@ -660,7 +666,8 @@
         <!-- move to next line in vscode : ctrl + Enter -->
 
         <h4>Textarea : </h4>
-        <textarea name="feedback" id="301" placeholder="Please give your valuable feedback..." cols="40" rows="5">This text will get into the box</textarea> <br>
+        <textarea name="feedback" id="301" placeholder="Please give your valuable feedback..." cols="40"
+            rows="5">This text will get into the box</textarea> <br>
 
         <!-- Upload a file -->
         <input type="file" name="file" id="">
@@ -693,7 +700,8 @@
     </iframe>
 
     <!-- Customized iframe -->
-    <iframe width="600" height="300" src="https://www.wikipedia.org/" frameborder="1" name="wikipedia" title="Wikipedia homepage in small size"></iframe>
+    <iframe width="600" height="300" src="https://www.wikipedia.org/" frameborder="1" name="wikipedia"
+        title="Wikipedia homepage in small size"></iframe>
     <hr>
 
     <!-- 
@@ -784,7 +792,7 @@
 
     <frameset rows="50%,50%">
         <frame src="dest1.html" name="frame1">
-        <frame src="dest2.html" name="frame2">
+            <frame src="dest2.html" name="frame2">
     </frameset>
 
     <frameset rows="100%">
@@ -793,10 +801,11 @@
 
     <frameset rows="50%,50%">
         <frame src="dest1.html" name="frame4">
-        <frame src="dest2.html" name="frame5">
+            <frame src="dest2.html" name="frame5">
     </frameset>
 
     <noframes>
+
         <body>The browser you are working does not support frames.</body>
     </noframes>
 

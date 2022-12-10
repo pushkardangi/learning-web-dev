@@ -16,9 +16,38 @@
 
         // loc -> line of code
 
-        let day = new Date();
+        // If and Else condition
+        let person_age = 17;
 
-        // switch conditional
+        if (18 <= person_age <= 80) {
+            console.log("You are eligible for driving");
+        }
+        else {
+            console.log("You cant Drive");
+        }
+
+        // If, Else If, Else Ladder
+        let age = 90;
+
+        if (age <= 10) {
+            console.log("You are too little to drive");
+        }
+
+        else if (age < 18) {
+            console.log("Not yet grown up.");
+        }
+
+        else if (age <= 80) {
+            console.log("You can drive.");
+        }
+
+        else {
+            console.log("Please Rest.");
+        }
+
+        let day = new Date();
+        
+        // Switch Conditionals
         switch (day.getDay()) {
             case 0:
                 day = "Sunday";
@@ -46,7 +75,7 @@
                 break;
         }
         document.write("Today is : ", day);
-
+        console.log("Today is : ",day);
 
     </script>
 

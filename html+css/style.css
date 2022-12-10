@@ -3,13 +3,37 @@ meter{
     height: 0.7in;
 }
 
+/*Example of Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+
+
 /* 
 CSS : Cascading Style Sheets
 regulated by : World Wide Web Consortium (W3C)
 
 Types :
 1. Inline css
- <body style="color:blue;text-align:center;">
+ <body style="color:blue; text-align:center;">
   Text
  </body>
 
@@ -55,6 +79,34 @@ Selectors :
 2. class selectors :     .class_name{ css properties }
 3. id selectors :        #id_name { css properties }
 4. group selectors :     h1, p, div { css properties }
+*/
+
+/* 
+1. combinator selectors : all (p) and (a) are selected
+p, a{
+  style
+}
+
+2. descendent combinators : every (li) in every (ul) is selected
+ul li {
+  style
+}
+
+3. Adjacent sibling selector : every (p) after every (div) is selected
+div + p{
+  style
+}
+
+4. pseudo class selector : properties applied when we hover (a) tag
+a:hover{
+  style
+}
+
+
+
+
+
+
 */
 
 

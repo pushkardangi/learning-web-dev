@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrow Function</title>
     <script>
+        let name = "Pushkar";
+        let surname = "Dangi";
+
         // normal function
-        function greet() {
-            document.write("<h1>Good Morning<h1>");
+        function greet(name = "default name", surname = "default text") {
+            document.write("Good Morning", name, surname);
+            document.write("<br>");
+
         };
 
         // arrow function
@@ -17,24 +22,27 @@
             document.write("<h1>Good Night<h1>");
         };
 
-        let sum = (a, b) => document.write("<br><br>sum : ", a + b, "<br>");
+        let sum = (a, b) => {
+            document.write("<br>sum : ", a + b, "<br>");
+        }
+        
         let half = a => document.write("half : ", a / 2);
+
+        // function calls
+        greet(name, surname);
+        greet("Honey");
+        greet();
+
+        sum(33, 44);
+        half(553);
+
     </script>
 </head>
 
 <body>
     <h1>Functions</h1>
 
-    <input type="button" onclick="greet()" value="Good Morning">
     <input type="button" onclick="greet1()" value="Good Night">
-
-    <script>
-        // function calls
-        sum(33, 44);
-        half(553);
-    </script>
-
-
 </body>
 
 </html>
