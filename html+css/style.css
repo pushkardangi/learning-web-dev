@@ -3,30 +3,6 @@ meter{
     height: 0.7in;
 }
 
-/*Example of Scroll Bar */
-
-/* width */
-::-webkit-scrollbar {
-    width: 15px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-
-
-
 /* 
 CSS : Cascading Style Sheets
 regulated by : World Wide Web Consortium (W3C)
@@ -53,11 +29,15 @@ Font Attributes :
 */
 
 /* 
+display : inline | block | inline-block | none
+*/
+
+/* 
 Color and Background :
 1. color
-2. background-color
+2. background-color: red;
 3. background-image: url("image.png");
-4. background-repeat
+4. background-repeat: x-repeat;
 5. background-attachment
 6. background-position
 7. background-size
@@ -71,18 +51,36 @@ Color and Background :
 5. word-spacing
 6. letter-spacing
 7. line-height
+8. text-indent
 */
 
 /* 
-Selectors : 
-1. element selectors :   p { css properties }
-2. class selectors :     .class_name{ css properties }
-3. id selectors :        #id_name { css properties }
-4. group selectors :     h1, p, div { css properties }
+Selectors :
+1. universal selector :           * { css properties }
+1. element/type selectors :       p { css properties }
+2. class selectors :              .class_name { css properties }
+3. id selectors :                 #id_name { css properties }
+4. attribute selector             a[title] { css properties }
+5. pseudo class selector          p:first-child { css properties }
+6. pseudo element selector        p::first-line { css properties }
+7. descendent combinator          article p { css properties }
+8. child combinator               article > p { css properties }
+9. adjacent sibling combinator    h1 + p { css properties }
+10. general sibling combinator    h1 ~ p { css properties } 
 */
 
 /* 
-1. combinator selectors : all (p) and (a) are selected
+1. universal selector : use to select everything
+{
+  style
+}
+
+1. class selector : 
+li.class_name{
+  style
+}
+
+1. combined selectors : all (p) and (a) are selected
 p, a{
   style
 }
@@ -97,15 +95,25 @@ div + p{
   style
 }
 
+3. combinator selector : all (p) inside (article)
+article > p {
+  style
+}
+
 4. pseudo class selector : properties applied when we hover (a) tag
 a:hover{
   style
 }
 
+5. attribute selector : 
+a[href="google.com"]{
+  style
+}
 
-
-
-
+6. pseudo element selector : 
+p::first-line{
+  style
+}
 
 */
 

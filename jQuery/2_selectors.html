@@ -34,7 +34,7 @@
 
 
     <button type="button">For P</button>
-    <button type="button">For All</button>
+    <button type="button" id="all">For All</button>
     <button type="button" id="btn">For Div</button>
     <button type="button" class="btn">For Span</button> <br><br>
 
@@ -96,39 +96,39 @@
     });
 
     // Id selector ::
-    // $(document).ready(function () {
-    //     $("#btn").click(function () {
-    //         console.log("div got hidden")
-    //         $("div").hide();
-    //     })
-    // });
+    $(document).ready(function () {
+        $("#btn").click(function () {
+            console.log("div got hidden")
+            $("div").hide();
+        })
+    });
 
     // Class Selector ::
-    // $(document).ready(function () {
-    //     $(".btn").click(function () {
-    //         $("span").hide();
-    //     });
-    // });
+    $(document).ready(function () {
+        $(".btn").click(function () {
+            $("span").hide();
+        });
+    });
 
     // Selects all elements ::
-    // $(document).ready(function () {
-    //     $("*").click(function () {
-    //         $("button").hide();
-    //     });
-    // });
+    $(document).ready(function () {
+        $("#all").click(function () {
+            $("*").hide();
+        });
+    });
 
     // Table even/odd
-    // $(document).ready(function () {
+    $(document).ready(function () {
 
-    //     $("tr:even").click(function () {
-    //         $("tr:even").css("color", "red");
-    //     });
+        $("tr:even").click(function () {
+            $("tr:even").css("color", "red");
+        });
 
-    //     $("tr:odd").click(function () {
-    //         $("tr:odd").css("color", "blue");
-    //     });
+        $("tr:odd").click(function () {
+            $("tr:odd").css("color", "blue");
+        });
 
-    // });
+    });
 
 
     // Summary of all Selectors

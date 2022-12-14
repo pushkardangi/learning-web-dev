@@ -5,8 +5,12 @@
     <script>
         $(document).ready(function () {
 
-            $("button").dblclick(function () {
+            $("button").click(function () {
                 $("img").fadeOut("slow");
+            });
+
+            $("button").dblclick(function () {
+                $("img").fadeIn("slow");
             });
 
 
@@ -17,8 +21,9 @@
 </head>
 
 <body>
-    <button>Fadeout</button>
-    <img id="image" src="hello.jpeg">
+    <center><button>Fade in/out</button></center>
+    
+    <img id="image" src="hello.jpeg" width="544em">
 </body>
 
 </html>

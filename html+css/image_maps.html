@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    Image Maps : 
+
+    Opening multiple links with single image
+    map single image into multiple hot_spots
+    
+    usemap : client side image map
+    ismap : server side image map 
+
+    Attributes of Map : 
+    name : used to map the image with map tag
+
+    Attributes of Area : 
+    shape : shape of the figure
+    shape = "circle | rect | poly | default="rest of the area""
+    
+    coords : for rect : left-top & bottom-right
+           : for circle : center & radius
+           : for poly : each vertex
+    
+    href : link of the destination page
+
+    title : specify the area in the image
+-->
+
+<h1>Image Maps</h1>
+    <img usemap="#shapes" src="image1.png" alt="image of shapes">
+
+    <map name="shapes">
+
+        <area shape="poly" coords="206,131,170,192,249,195" href="https://en.wikipedia.org/wiki/triangle" alt="triangle" title="triangle">
+
+        <area shape="circle" coords="104,66,38" href="https://en.wikipedia.org/wiki/circle" alt="circle" title="circle">
+
+        <area shape="rect" coords="166,36,248,101" href="https://en.wikipedia.org/wiki/heart" alt="heart" title="heart">
+
+        <area shape="default" href="https://en.wikipedia.org/wiki/heart" alt="def" title="default">
+
+    </map>
+</body>
+
+</html>

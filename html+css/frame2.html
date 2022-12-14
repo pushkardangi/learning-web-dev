@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Frames</title>
+</head>
+
+
+<!-- ------------------------------------------------------- -->
+
+<!-- 
+    Frameset : is HTML4 tag
+    : no bold / italic / underline inside frameset is allowed
+
+    ---------------------------------------------------------------------
+
+    ## Attributes of Frameset : 
+
+    border : between the frames, not all sides (thickness of the border)
+    bordercolor : colour of the border
+    
+    frameborder : for border : frameborder="0 | 1(default)"
+    : border should be displayed between the frames or not
+
+    framespacing : space between frames : num
+
+
+    ---------------------------------------------------------------------
+    ## Attributes of Frame tag :
+    
+    name : give name to frames
+
+    src : source file
+
+    marginwidth :  specify width of the spaces in pixels between the border and contents of left and right frame
+
+    marginheight : specify height of the spaces in pixels between the border and contents of top and bottom frame.
+
+    scrollbar : yes | no | auto
+
+    noresize : value : noresize="noresize"
+    1. user will not be able to resize the frames
+    2. default : user can resize the frame (how)
+
+-->
+
+<frameset cols="33%,33%,*"  border="33" bordercolor="pink">
+
+    <frameset rows="50%,50%" bordercolor="yellow" noresize="noresize">
+        <frame src="image_maps.html" name="frame1" marginwidth="70px">
+            <frame src="image_maps.html" name="frame2">
+    </frameset>
+
+    <frameset>
+        <frame src="index.html" name="frame3">
+    </frameset>
+
+    <frameset rows="50%,50%" >
+        <frame src="datalist.html" name="frame4" marginheight="70px">
+            <frame src="image_maps.html" name="frame5">
+    </frameset>
+
+    <noframes>
+        <body>This  browser does not support frames.</body>
+    </noframes>
+
+</frameset>
+
+</html>

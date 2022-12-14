@@ -9,9 +9,10 @@
 
     <script type="text/javascript">
 
-        // Data Types
-
+        // Data Types : nn ss bb u : null number symbol string bool BigInt undefined
         // JS use dynamic typing, no need to give type
+
+        // Primitive Data Types
         var a = 46;
         let int = 1;
         let float = 2.2;
@@ -21,9 +22,13 @@
         let nul = null;
         let bool_t = (int == int);
         let bool_f = (int == float);
+        let symbol = Symbol("I am a nice symbol")
+
+        // Non Primitive Data Types : object
         let person = {
             firstName: "John",
             lastName: "Doe",
+            "Hello": 535,
             age: 50
         };
 
@@ -37,7 +42,8 @@
         document.write(bool_f, "<br>");
         document.write(person.firstName, "<br>");
         document.write(person.lastName, "<br>");
-        document.write(person.age, "<br><br>");
+        document.write(person.age, "<br>");
+        document.write(person["Hello"], "<br><br>");
 
         // Javascript do implicit typecast
 

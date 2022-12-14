@@ -7,7 +7,7 @@
     <title>Array</title>
     <style>
         body{
-            font-size: 1.5vw;
+            font-size: 25px;
         }
     </style>
 </head>
@@ -18,7 +18,7 @@
         //declare array
         let arr = new Array();
 
-        let cars = [];
+        let cars = ["Hyundai","Scorpio","Nano","Bolero"];
 
         let str = "Sample_String";
         let fname = new Array ("Mango", "Apple","Banana","Orange","Grapes");
@@ -55,15 +55,10 @@
         fname.splice(1,1,"AD"); // index, how much to remove, what to add
         document.write("fname.splice() : ",fname,"<br>");
         
-
-        
-        
-
-
-
-        // for(let i = 0; i < fname.length; i++){
-        //     document.write(fname[i]," ");
-        // }
+        document.write("<br>","Using for Loop :  ");
+        for(let i = 0; i < fname.length; i++){
+            document.write(fname[i]," ");
+        }
     </script>
 </body>
 </html>
