@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Event Listeners</title>
+</head>
+
+<body>
+    <!-- Browser Events : 
+    click
+    mouseover/mouseout 
+    mousedown/mouseup 
+    mousemove
+    contextmenu 
+     
+    submit 
+    focus 
+
+    DOMContentLoaded 
+
+    transitionend -->
+
+    <h1>Heading</h1>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga unde at, omnis quod nulla dolores quia incidunt
+        sequi aliquam porro impedit deleniti, distinctio ducimus nesciunt nostrum fugit facere? Eligendi velit
+        laudantium fuga omnis vero aperiam vitae ullam facilis earum ipsa?
+    </p>
+    <input onclick="toggleHide()" type="button" value="Toggle Hide">
+
+    <script>
+        let para = document.getElementById('para');
+
+        // Event Listener + function
+        para.addEventListener('mouseover', function a() {
+            console.log('Mouse Inside');
+        });
+        
+        para.addEventListener('mouseout', function b() {
+            console.log('Mouse out');
+        });
+
+        // handling events through functions
+        function toggleHide() {
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+                para.style.color = 'pink';
+            }
+        }
+    </script>
+</body>
+
+</html>

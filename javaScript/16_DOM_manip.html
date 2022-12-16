@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+
+    <style>
+        ul>li {
+            font-size: 20px;
+            text-align: center;
+            width: 100px;
+            display: inline-block;
+            list-style-type: none;
+
+        }
+
+        ul {
+            padding: 10px;
+            background-color: aliceblue;
+        }
+
+        li:hover {
+            background-color: rgb(198, 225, 249);
+            border-radius: 5%;
+        }
+
+        p,
+        div {
+            font-size: 20px;
+            padding: 10px;
+            margin: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <ul id="nav">
+        <li id="home">Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact us</li>
+    </ul>
+
+    <!-- paragraphs -->
+    <p class="demo">Hello, This is paragraph with ID Demo</p>
+    <p class="demo">Hello, This is paragraph with ID Demo</p>
+    <p class="demo">Hello, This is paragraph with ID Demo</p>
+    <p class="demo">Hello, This is paragraph with ID Demo</p>
+
+    <!-- division -->
+    <div>This is a Div Element.</div>
+    
+
+    <script>
+        // select element by id
+        let home = document.getElementById("home");
+        home.innerHTML = "Ghar";
+
+        // select element by class
+        let demo = document.getElementsByClassName("demo");
+        demo[0].style.color = "Pink";
+        demo[2].style.color = "Brown";
+        demo[3].style.color = "Green";
+
+        // Query Selector
+        let sel = document.querySelector("div");
+        sel.style.backgroundColor = "pink";
+
+    </script>
+</body>
+
+</html>
