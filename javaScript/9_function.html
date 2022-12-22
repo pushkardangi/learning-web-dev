@@ -5,44 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrow Function</title>
+    <title>Functions</title>
+</head>
+
+<body>
+    <h1>Functions</h1>
+
+    <input type="button" onclick="gm()" value="Arrow Function">
+
+    <hr>
+    <h4> Normal Functions: </h4> <br>
+
     <script>
-        let name = "Pushkar";
-        let surname = "Dangi";
+        // Arrow function
 
-        // normal function
-        function greet(name = "default name", surname = "default text") {
-            document.write("Good Morning", name, surname);
-            document.write("<br>");
-
-        };
-
-        // arrow function
-        let greet1 = () => {
+        let gm = () => {
             document.write("<h1>Good Night<h1>");
         };
 
         let sum = (a, b) => {
             document.write("<br>sum : ", a + b, "<br>");
         }
-        
+
         let half = a => document.write("half : ", a / 2);
+
+        let obj = {
+            greeting: "Good Morning",
+            names: [" Pushkar"," Harry"," skillF"," Bete"," Jaguar"],
+            speak(){
+                this.names.forEach((student)=> {
+                    // lexical this
+                    console.log(this.greeting + student);
+                });
+            }
+        }
+        obj.speak();
+
+        // function call : 
+        // sum(33, 44);
+        // half(553);
+
+
+
+        // Normal Function :
+
+        let name = "Pushkar";
+        let surname = "Dangi";
+
+        function greet(name = "default name", surname = "default text") {
+            document.write("Good Morning", name, surname);
+            document.write("<br>");
+
+        };
 
         // function calls
         greet(name, surname);
         greet("Honey");
         greet();
 
-        sum(33, 44);
-        half(553);
-
     </script>
-</head>
-
-<body>
-    <h1>Functions</h1>
-
-    <input type="button" onclick="greet1()" value="Good Night">
 </body>
 
 </html>

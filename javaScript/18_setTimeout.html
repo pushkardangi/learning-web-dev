@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout and setInterval</title>
+    <style>
+        * {
+            margin: 50px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="container"></p>
+    <span id="clock"></span>
+
+    <script>
+
+        // setTimeout & clearTimeout
+
+        function greet(name) {
+            let act = document.getElementById("container");
+            act.innerHTML = "Hello " + name + ". How are you ?";
+        }
+
+        let timeOut = setTimeout(greet, 4000, "Pushkar");
+        // clearTimeout(timeOut);
+
+        //--------------------------------------------------------
+
+        // setInterval & clearInterval
+
+        function displayTime() {
+            let time = new Date();
+            document.getElementById("clock").innerHTML = time;
+        }
+
+        let interval = setInterval(displayTime, 1000);
+        // clearInterval(interval);
+
+
+
+    </script>
+</body>
+
+</html>

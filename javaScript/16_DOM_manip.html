@@ -9,9 +9,12 @@
 
     <style>
         ul>li {
+            color: #2165e4;
             font-size: 20px;
             text-align: center;
-            width: 100px;
+            /* width: 100px; */
+            margin: 4px 5 px;
+            padding: 5px 10px;
             display: inline-block;
             list-style-type: none;
 
@@ -63,14 +66,18 @@
 
         // select element by class
         let demo = document.getElementsByClassName("demo");
-        demo[0].style.color = "Pink";
+        demo[0].style.color = "#6495ed";
         demo[2].style.color = "Brown";
         demo[3].style.color = "Green";
 
-        // Query Selector
-        let sel = document.querySelector("div");
-        sel.style.backgroundColor = "pink";
-
+        // Query selector
+        let select_a = document.querySelectorAll("p");
+        select_a[0].style.backgroundColor = "#dfff00";
+        select_a[1].style.backgroundColor = "pink";
+        select_a[2].style.backgroundColor = "pink";
+        select_a[3].style.backgroundColor = "pink";
+        
+        let sel = document.querySelectorAll("p");
     </script>
 </body>
 

@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events and Event Listeners</title>
+    <style>
+        #box {
+            height: 200px;
+            width: 300px;
+            border: 2px solid green;
+            margin: 50px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,18 +38,24 @@
         laudantium fuga omnis vero aperiam vitae ullam facilis earum ipsa?
     </p>
     <input onclick="toggleHide()" type="button" value="Toggle Hide">
+    
+
+    <div id="box" onmousemove="moveFunction(event)" onmouseout="mouseout()"></div>
+    <p id="cordsOut"></p>
 
     <script>
         let para = document.getElementById('para');
 
         // Event Listener + function
-        para.addEventListener('mouseover', function a() {
+        para.addEventListener('mousedown', function a() {
             console.log('Mouse Inside');
         });
-        
-        para.addEventListener('mouseout', function b() {
+
+        para.addEventListener('mouseup', function b() {
             console.log('Mouse out');
         });
+
+        //-----------------------------------------------------------------
 
         // handling events through functions
         function toggleHide() {
@@ -52,6 +66,20 @@
                 para.style.display = 'block';
                 para.style.color = 'pink';
             }
+        }
+        //-----------------------------------------------------------------
+
+        let cordsOut = document.getElementById("cordsOut")
+        
+        function moveFunction(event) {
+            let x = event.clientX;
+            let y = event.clientY;
+            let cord = "Coordinates: (" + x + "," + y + ")";
+            cordsOut.innerHTML = cord;
+        }
+        
+        function mouseout(){
+            cordsOut.innerHTML = "";
         }
     </script>
 </body>
