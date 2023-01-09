@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+    <style>
+        /* * {
+            margin: 0px;
+            padding: 0px;
+        } */
+
+        .box-one {
+            background-color: red;
+            border: 50px solid pink;
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            padding: 10px;
+
+            box-sizing: border-box; 
+            /* box = content + padding + border */
+        }
+        
+        .box-two {
+            background-color: green;
+            border: 50px solid yellow;
+            height: 200px;
+            width: 200px;
+            margin: 50px;
+            padding: 10px;
+
+            /* box = content */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-one">one</div>
+    <div class="box-two">two</div>
+</body>
+
+</html>
