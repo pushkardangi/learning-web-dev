@@ -2,19 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
-
+    <title>Type Conversion</title>
     <script type="text/javascript">
 
-        document.write("Hello" + "World", "<br><br>");
+        document.write("Type Conversion", "<br><br>");
 
+        // Number()
+        let a = "11";
+        let b = "45";
+        document.write(`a = "11" -- b = "45" <br>`);
+        document.write("Number(a) + Number(b) = ",Number(a) + Number(b));
+        document.write("<br><br>");
+        
+        document.write(`Number("abc") = `,Number("abc"),`<br><br>`);
+
+        // String()
+        let x = 3;
+        let y = 5;
+        document.write(`x = 3 -- x = 5 <br>`);
+        document.write("String(x) + String(y) = ",String(x) + String(y));
+        document.write("<br><br>");
+        
+        // Boolean()
+        document.write(`Boolean("") = `,Boolean(""),`<br>`);
+        document.write(`Boolean("a") = `,Boolean("a"),`<br>`);
+        document.write(`Boolean(22) = `,Boolean(22),`<br>`);
+        document.write(`Boolean(0) = `,Boolean(0),`<br>`);
+        document.write(`Boolean(-10) = `,Boolean(-10),`<br>`);
+        document.write(`Boolean(-0) = `,Boolean(-0),`<br>`);
+        document.write("<br>");
+        
         // conditionals
         let bit = 0;
         let cond = (bit ? "it's 1" : "it's 0");
-        document.write(cond, "<br><br>");
+        document.write(`bit = ${bit} <br> (bit ? "it's 1" : "it's 0")" -- `,cond);
 
         // new
         let arr = new Array();
@@ -30,6 +51,12 @@
 
     </script>
 
+    <style>
+        body {
+            font-size: 25px;
+            margin: 40px;
+        }
+    </style>
 </head>
 
 <body>

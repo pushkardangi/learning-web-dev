@@ -2,13 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <title>JS Operators</title>
     <style>
         body {
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .container {
@@ -23,7 +20,7 @@
         <script>
             // Operators in JavaScript
             // Operand - entities on which operators operate
-            // In 3 + 4 '+' is the operator and 3,4 are operands
+            // In 3 + 4, '+' is the operator and 3,4 are operands
 
             // 1. unary operator - It has single operand (x = -x)
             // Examples of unary operator
@@ -36,15 +33,33 @@
             // Arithmetic Operators
             var a = 5;
             var b = 2;
-            document.write(" A : ", a, "<br>");
-            document.write(" B : ", b, "<br>");
+            document.write(" a = ", a, " -- b = ", b, "<br>");
             document.write("Arithmetic Operators : ", "<br>");
             document.write(" Addition : ", a + b, "<br>");
             document.write(" Subtraction : ", a - b, "<br>");
             document.write(" Multiplication : ", a * b, "<br>");
             document.write(" Division : ", a / b, "<br>");
             document.write(" Modulus : ", a % b, "<br>");
-            document.write(" Exponent : ", a ** b, "<br>");
+            document.write(" Exponent : ", a ** 3, "<br><br>");
+
+            // difference from other languages
+            let x = 2, y = "3";
+            document.write(`x = 2 -- y = "3"<br>`);
+            document.write("x + y = ",x+y,"<br>");
+            document.write("x - y = ",x-y,"<br>");
+            document.write("x * y = ",x*y,"<br>");
+            document.write("x / y = ",x/y,"<br>");
+            document.write("x ** y = ",x**y,"<br><br>");
+
+            let p = "2", q = "3";
+            document.write(`p = "2" -- q = "3"<br>`);
+            document.write("p + q = ",p+q,"<br>");
+            document.write("p - q = ",p-q,"<br>");
+            document.write("p * q = ",p*q,"<br>");
+            document.write("p / q = ",p/q,"<br>");
+            document.write("p ** q = ",p**q,"<br><br>");
+
+            // Pre and Post Increment and Decrement
             document.write(" a++ : ", a++, "<br>");
             document.write(" ++a : ", ++a, "<br>");
             document.write(" a-- : ", a--, "<br>");
