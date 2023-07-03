@@ -1,11 +1,12 @@
-#ignores all media files
-#(except .png and .jpeg)
+node_modules
+
+# ignore media files
 *.mp3
 *.mp4
 *.pdf
 
-#ignores vs code folder
+# ignore vs code folder
 .vscode/
 
-#ignores this folder
+# ignore pdf notes folder
 cheat_sheet/
