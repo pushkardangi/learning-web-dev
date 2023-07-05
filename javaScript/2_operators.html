@@ -94,6 +94,13 @@
             document.write("a != b : ", c != d, "<br>");
             document.write("a === b : ", c === d, "<br>");
             document.write("a !== b : ", c !== d, "<br>");
+            
+            document.write("'apple' > 'banana' : ", ('apple' > 'banana'), "<br>");
+            document.write("'glowing' > 'glow' : ", ('glowing' > 'glow'), "<br>");
+            document.write("'2' > '3' : ", ('2' > '3'), "<br>"); // unicode is compared
+            document.write("1 > null : ", 1 > null, "<br>");
+            document.write("null == undefined : ", null == undefined, "<br>");
+            document.write("null === undefined : ", null === undefined, "<br>");
             document.write("<br>");
 
             // Logical Operators
@@ -110,6 +117,12 @@
             let bit = true;
             let ans = (bit ? 1 : 0);
             document.write("bit = ", bit, "<br>", "(bit ? 1 : 0) : ", ans);
+            document.write("<br><br>");
+
+            let marks = 33;
+
+            let result = marks > 80 ? "A+" : marks > 60 ? "A" : marks > 40 ? "B" : marks > 32 ? "C" : "fail";
+            document.write("The result is : ", result);
         </script>
 
     </div>
