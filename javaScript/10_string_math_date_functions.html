@@ -79,7 +79,9 @@
         document.write("LOG2E : ", Math.LOG2E, "<br><br>");
 
         document.write("Math Functions : <br>");
+
         let arr = [12, 33, 55, 34, 36, 3, 34];
+        
         document.write("min : ", Math.min.apply(null, arr), "<br>");
         document.write("max : ", Math.max.apply(null, arr), "<br>");
 
@@ -112,6 +114,7 @@
         document.write("<h3>Date Functions ::</h3>");
 
         let d = new Date();
+
         document.write("getDate : ", d.getDate(), "<br>");
         document.write("getMonth : ", d.getMonth() + 1, "<br>");
         document.write("getFullYear : ", d.getFullYear(), "<br>");
@@ -124,6 +127,7 @@
         document.write("getSeconds : ", d.getSeconds(), "<br>", "<br>");
 
         let de = new Date();
+        
         de.setDate(19);
         de.setMonth(0);
         de.setFullYear("2000");
