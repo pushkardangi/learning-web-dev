@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header h1 {
     text-align: center;
@@ -28,30 +32,25 @@ nav a {
     color: white;
 }
 
-body
-{
+body {
     background: silver;
 }
 
-p#idru
-{
+p#idru {
     border-style: double;
     border-width: 6px;
     border-color: lemonchiffon;
 }
 
-h1.classme
-{
+h1.classme {
     color: rgb(29, 41, 18);
     background-color: rgb(202, 202, 202);
 }
 
-#cardtype
-{
+#cardtype {
     font-style: italic;
 }
 
-.tr
-{
+.tr {
     text-align: center;
 }

@@ -1,4 +1,7 @@
-// continue and break
+
+console.log("Control Statements - \n");
+
+// continue, break and return
 
 // for loop
 // for each
@@ -9,20 +12,23 @@
 // do while loop
 
 // if else
+// if else if else
 // switch case
 
 
-// For Each loop :
+// For Each loop : iterate over arrays
 let fruits = ["Mango", "Banana", "Apple", "Orange", "Guava"];
 
 fruits.forEach((element) => {
-    console.log(element + " is good.");
+    console.log("for each", element);
 });
+console.log();
 
 // For Of loop : iterate over arrays
 for (element of fruits) {
-    console.log(element);
+    console.log("for of", element);
 }
+console.log();
 
 // For In Loop : iterate over objects 
 let student = {
@@ -34,7 +40,29 @@ let student = {
 for (key in student) {
     console.log(`The ${key} of student is ${student[key]}.`)
 }
+console.log();
 
+// For loop
+for(let i = 0; i < fruits.length; i++) {
+    console.log("for", fruits[i]);
+}
+console.log();
+
+// While loop
+let i = 0;
+while (i < fruits.length) {
+    console.log("while", fruits[i]);
+    i++;
+}
+console.log();
+
+// Do While loop
+i = 0;
+do {
+    console.log("do while", fruits[i]);
+    i++;
+} while (i < fruits.length);
+console.log();
 
 // If and Else condition
 let person_age = 100;

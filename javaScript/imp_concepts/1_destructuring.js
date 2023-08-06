@@ -1,16 +1,16 @@
 let obj = {
-    name1:"Pushkar",
-    class1: 14,
-    fav_lang:"Python"
+    userName: "Pushkar",
+    num: 14,
+    lang: "Python",
 }
 console.log(obj);
 
 // manual destructuring
-// let name1 = obj.name1;
-// let class1 = obj.class1;
-// let fav_lang = obj.fav_lang;
+// let userName = obj.userName;
+// let num = obj.num;
+// let lang = obj.lang;
 
 // destructuring concept
-let {name1, class1, fav_lang} = obj;
+let { userName, num, lang } = obj;
 
-console.log(name1, class1, fav_lang);
+console.log(userName, num, lang);

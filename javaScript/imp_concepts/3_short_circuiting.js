@@ -1,3 +1,4 @@
+
 // Short Circuiting
 
 // Truthy and Falsy Value
@@ -7,11 +8,15 @@
 // OR - search for the first truthy value and returns it, if truthy not found returns last falsy value
 // AND - search for the first falsy value and returns it, if falsy not found returns last truthy value
 
-console.log(`Boolean("text") -    `,Boolean("text"));
+console.log(`Boolean(1) -      `,Boolean(1));
+console.log(`Boolean(-1) -     `,Boolean(-1));
+console.log(`Boolean("text") - `,Boolean("text"));
+console.log(`Boolean(0) -        `,Boolean(0));
+console.log(`Boolean(-0) -       `,Boolean(-0));
 console.log(`Boolean("") -       `,Boolean(""));
-console.log(`Boolean(0) -       `,Boolean(0));
+console.log(`Boolean(NaN) -      `,Boolean(NaN));
 console.log(`Boolean(null) -     `,Boolean(null));
-console.log(`Boolean(undefined) - `,Boolean(undefined));
+console.log(`Boolean(undefined) -`,Boolean(undefined));
 console.log("\n")
 
 //-------------------------------------------------------
@@ -25,6 +30,7 @@ console.log("AND -",lastName && null && undefined);
 console.log("\n")
 //--------------------------------------------------------
 
+// Short Circuiting
 let a = 12;
 let b;
 

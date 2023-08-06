@@ -26,12 +26,14 @@ let obj1 = {
     class1: 13,
     fav_lang:"Python"
 }
-// console.log(obj1);
+console.log(obj1);
 
+// normal way to copy object
 // let obj2 = {};
 // obj2.name1 = obj1.name;
 // obj2.class1 = obj1.class;
 // obj2.fav_lang = "Javascript";
 
+// using spread operator
 let obj2 = {...obj1, fav_lang:"JavaScript"};
 console.log(obj2);
