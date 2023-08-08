@@ -13,7 +13,7 @@ let half = a => console.log("half : ", a / 2);
 
 let obj = {
     greeting: "Good Morning",
-    names: [" Pushkar", " Harry", " skillF", " Bete", " Jaguar"],
+    names: [" Pushkar", " Harry", " skillF", " Jaguar"],
     speak() {
         this.names.forEach((student) => {
             // lexical this
@@ -21,26 +21,22 @@ let obj = {
         });
     }
 }
+
+// function calls
+gm();
+sum(33, 44);
+half(50);
 obj.speak();
 
-// function call : 
-// sum(33, 44);
-// half(553);
+console.log();
 
+// Normal Function with default parameters:
 
-
-// Normal Function :
-
-let name = "Pushkar";
-let surname = "Dangi";
-
-function greet(name = "default name", surname = "default text") {
+function greet(name = "default name", surname = "default surname") {
     console.log("Good Morning", name, surname);
-    console.log("<br>");
-
 };
 
 // function calls
-greet(name, surname);
+greet("Pushkar", "Dangi");
 greet("Honey");
 greet();
