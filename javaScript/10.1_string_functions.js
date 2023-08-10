@@ -34,7 +34,7 @@ console.log("split : ", str.split(" ")); // return array of words in string
 console.log("slice : ", str.slice(0, 5)); // 5 excluded
 console.log("substring : ", str.substring(0, 5)); // 5 excluded
 console.log("substring : ", str.substring(5)); // from 5 to last
-console.log("substr : ", str.substr(2, 5)); // index 2 to 5 letters // deprecated
+// console.log("substr : ", str.substr(2, 5)); // index 2 to 5 letters // deprecated
 
 console.log("valueOf : ", str.valueOf()); // return string value
 
