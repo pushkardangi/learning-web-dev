@@ -42,4 +42,10 @@ console.log(`Boolean(-10) = `, Boolean(-10));
 console.log(`Boolean(22) = `, Boolean(22));
 console.log(`Boolean(0) = `, Boolean(0));
 console.log(`Boolean(-0) = `, Boolean(-0));
-console.log(`Boolean("") = `, Boolean(""));
+console.log(`Boolean("") = `, Boolean(""), "\n");
+
+console.log("Type Conversion :\n");
+console.log("parseInt : ", parseInt("-10.33"));
+console.log("parseFloat : ", parseFloat("-10.33"));
+console.log("Float + Int : ", parseFloat("-10.33") + parseInt("-10.33"));
+console.log("Strings Added : ", "-10.33 " + " -10.33");
